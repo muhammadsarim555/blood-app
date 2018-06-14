@@ -25,7 +25,7 @@
     background-size: cover;
 }
 .top-nav-collapse {
-    background-color: #3f51b5 !important;
+    background-color: #ff065d !important;
 }
 @media (max-width: 420px){
 .targetImage{
@@ -37,14 +37,14 @@
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #3f51b5 !important;
+        background: #ff065d !important;
     }
 }
 .targetProfile{
     position: absolute;
     right: 10px;
-    top: 15px;
-    bottom: 20px;
+    top: 7px;
+    /* bottom: 20px; */
 
 }
 @media(max-width: 400px){
