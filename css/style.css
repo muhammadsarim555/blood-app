@@ -21,15 +21,17 @@
 /* ************************************************************************************************************************************************* */
 /* http://www.friends2support.org/imgs/landingpage/blood_drop_search.gif */
 .intro-2 {
-    background: url("../images/background-blood.jpg")no-repeat center center;
-    background-size: cover;
+    background: url("../images/background-blood.jpg")no-repeat  center;
+    background-size: cover  ;
+    
+    margin-bottom:500px;
 }
 .top-nav-collapse {
     background-color: #c00101 !important;
 }
 @media (max-width: 420px){
-.targetImage{
-    margin-top: 20px;
+.targetImg{
+    height: 70%;
 }
 }
 .navbar:not(.top-nav-collapse) {
@@ -48,19 +50,41 @@
     /* bottom: 20px; */
 
 }
-@media(max-width: 400px){
+.btnProfile{
+    visibility: hidden !important; 
+    /* color: blue; */
+}
+.targetSignUp{
+    margin-bottom: 0px;
+}
+@media(max-width: 450px){
     .targetProfile{
         position: absolute;
         right: 10px;
         top: 15px;
         bottom: 20px;
-    
+        
     }   
 }
+@media (max-width: 300px){
+    .targetProfile{
+    visibility:hidden;
+}
+.btnProfile {
+    visibility: visible !important;
+}
+
+}
+
+
+        /* background-color: blue; */
+   
+
+
 .hm-gradient .full-bg-img {
-    background: -webkit-linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(29, 236, 197, 0.4)), to(rgba(96, 0, 136, 0.4)));
-    background: linear-gradient(to 45deg, rgba(29, 236, 197, 0.4), rgba(96, 0, 136, 0.4) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(255, 4, 4, 0.4), rgba(178, 30, 123, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(250, 3, 27, 0.4)), to(rgba(43, 1, 61, 0.4)));
+    background: linear-gradient(to 45deg, rgba(29, 236, 197, 0.4), rgba(253, 19, 19, 0.4) 100%);
 }
 .card {
     background-color: rgba(229, 228, 255, 0.2);
