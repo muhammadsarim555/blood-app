@@ -19,13 +19,13 @@
 /* } */
 
 /* ************************************************************************************************************************************************* */
-
+/* http://www.friends2support.org/imgs/landingpage/blood_drop_search.gif */
 .intro-2 {
-    background: url("http://mdbootstrap.com/img/Photos/Others/img%20(42).jpg")no-repeat center center;
+    background: url("../images/background-blood.jpg")no-repeat center center;
     background-size: cover;
 }
 .top-nav-collapse {
-    background-color: #ff065d !important;
+    background-color: #c00101 !important;
 }
 @media (max-width: 420px){
 .targetImage{
@@ -37,7 +37,8 @@
 }
 @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-        background: #ff065d !important;
+    /* background-color: #c00101 !important; */
+    background: #c00101 !important;
     }
 }
 .targetProfile{
