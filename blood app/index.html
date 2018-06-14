@@ -107,8 +107,8 @@
                                              You can <strong>Blood Donate </strong> here.   
                                             </h6>
                                             <br>
-                                            <a class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Home</a>
-                                            <a class="btn btn-outline-white wow fadeInLeft btnProfile" data-wow-delay="0.3s">Profile</a>
+                                            <a href="html/home.html"  class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Home</a>
+                                            <a class="btn btn-outline-white wow fadeInLeft btnProfile" data-wow-delay="0.3s" onclick="signIn()">Profile</a>
                                             
                                         </div>
                                     </div>
@@ -147,9 +147,9 @@
     
                                                         <div class="inline-ul text-center d-flex justify-content-center">
                                                             
-                                                            <a class="icons-sm tw-ic"><i class="fa fa-google white-text targetGoogle"></i></a>
+                                                            <a class="icons-sm tw-ic" onclick="signIn"><i class="fa fa-google white-text targetGoogle"></i></a>
                                                         
-                                                            <a class="icons-sm li-ic"><i class="fa fa-facebook white-text targetFacebook"> </i></a>
+                                                            <a class="icons-sm li-ic" onclick="signIn()"><i class="fa fa-facebook white-text targetFacebook"> </i></a>
                                                             <!-- <a class="icons-sm ins-ic"><i class="fa fa-instagram white-text"> </i></a> -->
                                                         </div>
                                                 </div>
@@ -163,7 +163,7 @@
                         </div>
                     </div>
                 </section>
-    
+
             </header>
             <!--Main Navigation-->
     
@@ -198,6 +198,7 @@
             </main>
             <!--Main Layout-->
     
+                <!-- <button onclick="signIn()">click</button> -->
         </body>
     </html>
 
@@ -228,5 +229,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/js/mdb.min.js"></script>
 
 <script src="js/main.js"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
 
 </html>

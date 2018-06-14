@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Donate</title>
+</head>
+
+<!-- ************************************************************************************************************************************** -->
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/css/mdb.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="shortcut icon" href="../images/drop.jpg" type="image/icon">
+
+<!-- ************************************************************************************************************************************** -->
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD_6RfBLw0urzmxDNU4RQobREjatrkROJ4",
+    authDomain: "app-blood.firebaseapp.com",
+    databaseURL: "https://app-blood.firebaseio.com",
+    projectId: "app-blood",
+    storageBucket: "app-blood.appspot.com",
+    messagingSenderId: "171586657340"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- ************************************************************************************************************************************** -->
+
+<body>
+<!-- ************************************************************************************************************************************** -->
+
+    <!--Navbar-->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark pink targetNavbar"> -->
+
+        <!-- Navbar brand -->
+        <!-- <div class="container">
+        <div class="col-xs-4 offset-1">
+            
+        <a class="navbar-brand title"  href="index.html"><img src="images/drop.jpg" id="drop" alt="soory" width="45px " height="45px"> Blood Donor</a>
+    
+        
+        </div>
+            
+        </div>
+    </nav> -->
+    
+    <!-- ************************************************************************************************************************************** -->
+    
+    <!-- <img src="http://www.friends2support.org/imgs/landingpage/blood_drop_search.gif" alt="blood"> -->
+
+    <!-- ************************************************************************************************************************************** -->
+    
+    <html lang="en" class="full-height">
+        <body>
+    
+            <!--Main Navigation-->
+            <header>
+    
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                    <div class="container">
+                        <a class="navbar-brand" href="../index.html"><strong>Blood Donor</strong></a>
+                        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation"> -->
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                        <!-- </button> -->
+                        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent-7"> -->
+                            <!-- <li class="nav-item active"> -->
+                                <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+                                <!-- </li> -->
+                                <!-- <li class="nav-item"> -->
+                                    <!-- <a class="nav-link" href="#">Link</a> -->
+                                    <!-- </li> -->
+                                    
+                                                <ul class="navbar-nav mr-auto">
+                                    <a class="nav-link targetProfile" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Profile</a>
+                                </li>
+                            </ul>
+                            <!--  <form class="form-inline"> -->
+                                <!-- <div class="md-form mt-0">
+                                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                                </div> -->
+                            <!-- </form>  -->
+                        </div>
+                    </div>
+                </nav>
+    
+                <!--Intro Section-->
+                <section class="view intro-2 hm-gradient targetImg">
+                    <div class="full-bg-img ">
+                        <div class="container flex">
+                            <div class="d-flex align-items-center content-height">
+                                <div class="row flex-center pt-5 mt-3">
+                                    <!-- <div class="col-md-6 text-center text-md-left mb-5"> -->
+                                        <div class="white-text">
+                                            <!-- <h1 class="h1-responsive font-weight-bold wow fadeInLeft " data-wow-delay="0.3s">Sign up right now! </h1> -->
+                                            <!-- <hr class=" wow fadeInLeft" data-wow-delay="0.3s"> -->
+                                            <!-- <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Hello, Welcome To Blood Donor App 
+                                             You can <strong>Blood Donate </strong> here.   
+                                            </h6> -->
+                                            <!-- <br> -->
+                                            <!-- <a href" class="btn btn-outline-white wow fadeInLeft" data-wow-delay="0.3s">Home</a> -->
+                                            <!-- <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">A</a>
+                                                <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">A</a> -->
+                                                <a class="btn btn-outline-white wow fadeInLeft btnProfile" data-wow-delay="0.3s">Profile</a>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- </div> -->
+                                    <!--/.Form-->
+                                </div>
+                                <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">A+</a>
+                                <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">A-</a>
+                                <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">B+</a>
+                            <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">B-</a>
+                            <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">O+</a>
+                            <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">O-</a>
+                            <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">AB+</a>
+                            <a class="btn btn-outline-white wow fadeInLeft " data-wow-delay="0.3s">AB-</a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </section>
+                
+
+            </header>
+            <!--Main Navigation-->
+    
+            <!--Main Layout-->
+            <main>
+    
+                <div class="container">
+    
+                    <!--Grid row-->
+                    <div class="row py-5">
+    
+                        <!--Grid column-->
+                        <div class="col-md-10 offset-md-1 text-center">
+    
+                            <p>Here, You can Donate your Blood but there are some restriction ,
+                            
+                            Firstly Sign Up otherwise you can not post your blood.
+                               During Post you have to Fill up Foam 
+                                Thank You
+                                
+                                
+                            </p>
+    
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+    
+                </div>
+    
+            </main>
+            <!--Main Layout-->
+    
+                <!-- <button onclick="signIn()">click</button> -->
+        </body>
+    </html>
+
+
+    <!-- ************************************************************************************************************************************** -->
+    
+<!-- ************************************************************************************************************************************** -->
+
+<!-- ************************************************************************************************************************************** -->
+
+<!-- ************************************************************************************************************************************** -->
+
+<!-- ************************************************************************************************************************************** -->
+
+<!-- ************************************************************************************************************************************** -->
+
+<!-- ************************************************************************************************************************************** -->
+
+</body>
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/js/mdb.min.js"></script>
+
+<script src="../js/main.js"></script>
+
+</html>
