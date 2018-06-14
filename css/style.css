@@ -1,24 +1,69 @@
 /* ************************************************************************************************************************************************* */
-.title{
+/* .title{
     font-size: 40px;
     /* text-transform: uppercase;1 */
     /* font-family: serif; */
-    font-weight: bolder;
+    /* font-weight: bolder; */
     
 
-}
-#drop{
+/* } */
+/* #drop{ */
     /* border-radius: 0px; */
-}
+/* } */
 
 
-@media (max-width: 450px){
+/* @media (max-width: 450px){
     .title{
         font-size: 15px;
+    } */
+/* } */
+
+/* ************************************************************************************************************************************************* */
+
+.intro-2 {
+    background: url("http://mdbootstrap.com/img/Photos/Others/img%20(42).jpg")no-repeat center center;
+    background-size: cover;
+}
+.top-nav-collapse {
+    background-color: #3f51b5 !important;
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #3f51b5 !important;
+    }
+}
+.hm-gradient .full-bg-img {
+    background: -webkit-linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(29, 236, 197, 0.4)), to(rgba(96, 0, 136, 0.4)));
+    background: linear-gradient(to 45deg, rgba(29, 236, 197, 0.4), rgba(96, 0, 136, 0.4) 100%);
+}
+.card {
+    background-color: rgba(229, 228, 255, 0.2);
+}
+
+ .md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.md-form label {
+    color: #ffffff;
+}
+h6 {
+    line-height: 1.7;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1040px;
     }
 }
 
-/* ************************************************************************************************************************************************* */
+
 
 /* ************************************************************************************************************************************************* */
 
