@@ -20,6 +20,9 @@
 
 /* ************************************************************************************************************************************************* */
 /* http://www.friends2support.org/imgs/landingpage/blood_drop_search.gif */
+body{
+    text-transform: capitalize;
+}
 .intro-2 {
     background: url("../images/background-blood.jpg")no-repeat  center;
     background-size: cover  ;
@@ -117,7 +120,10 @@ margin-right: 10px;
     float: right;
 } */
 
-
+.targetBtn{
+    /* width: 80px; */
+    /* height: 40px; */
+}
 
 
 /* ************************************************************************************************************************************************* */
