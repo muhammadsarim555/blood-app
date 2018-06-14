@@ -27,6 +27,11 @@
 .top-nav-collapse {
     background-color: #3f51b5 !important;
 }
+@media (max-width: 420px){
+.targetImage{
+    margin-top: 20px;
+}
+}
 .navbar:not(.top-nav-collapse) {
     background: transparent !important;
 }
@@ -34,6 +39,22 @@
     .navbar:not(.top-nav-collapse) {
         background: #3f51b5 !important;
     }
+}
+.targetProfile{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    bottom: 20px;
+
+}
+@media(max-width: 400px){
+    .targetProfile{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        bottom: 20px;
+    
+    }   
 }
 .hm-gradient .full-bg-img {
     background: -webkit-linear-gradient(45deg, rgba(83, 125, 210, 0.4), rgba(178, 30, 123, 0.4) 100%);
@@ -62,6 +83,15 @@ h6 {
         height: 1040px;
     }
 }
+.targetGoogle{
+margin-right: 10px;
+    /* float: left; */
+    /* margin-left: 2px; */
+}
+/* .targetGoogle{
+    float: right;
+} */
+
 
 
 
