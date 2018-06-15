@@ -56,12 +56,12 @@ function signIn(){
     
 
 // *******************************************************************************************************************************
+// for hide content
 
-let btn1 = document.getElementById('btn1');
-btn1.addEventListener('click', function h(){
-      // document.getElementsByClassName('targetbloodGroup').style.display = "none";
-      btn1.style.display = 'none';
-} )
+// let btn1 = document.getElementById('btn1');
+// btn1.addEventListener('click', function h(){
+//   btn1.style.display = 'none';
+// } )
 
 // *******************************************************************************************************************************
 // *******************************************************************************************************************************
