@@ -206,3 +206,9 @@ margin-right: 10px;
         display: none;
     }
 }
+#btn1{
+    /* position: absolute; */
+    /* left: 10px; */
+    /* top: 50px; */
+    float: left;
+}
