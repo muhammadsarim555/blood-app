@@ -176,5 +176,15 @@ margin-right: 10px;
     background-color: transparent !important;  
 
 }
+#target{
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+@media(max-width: 900px){
+    .targetHome{
+        margin: auto 0px;
+    }
+}
 /*  */
 
