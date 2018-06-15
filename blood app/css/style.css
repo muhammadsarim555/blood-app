@@ -188,3 +188,14 @@ margin-right: 10px;
 }
 /*  */
 
+.targetfotWidth{
+    width: 134px;
+    /* width: 100px; */
+}
+
+@media(max-width: 600px){
+    .targetbloodGroup{
+        width: auto;
+        height: auto;
+    }
+}

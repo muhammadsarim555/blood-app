@@ -13,7 +13,7 @@ function signIn(){
         // The signed-in user info.
         var user = result.user;
         // console.log(user)
-        console.log('token', token);
+        // console.log('token', token);
         console.log('user', user);
         
         // ...
