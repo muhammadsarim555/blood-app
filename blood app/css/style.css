@@ -25,7 +25,7 @@ body{
 }
 .intro-2 {
     background: url("../images/background-blood.jpg")no-repeat  center;
-    background-size: cover;
+    background-size:  cover;
     
 }
 @media(max-width:300px){
@@ -39,9 +39,14 @@ body{
 .top-nav-collapse {
     background-color: #c00101 !important;
 }
+.targetBtn{
+    height: 100%;
+}
+
 @media (max-width: 420px){
 .targetImg{
-    height: 70%;
+
+    height: 100%;
 }
 }
 .navbar:not(.top-nav-collapse) {
@@ -170,7 +175,7 @@ margin-right: 10px;
     padding-left: 2px;
 } */
 .targetAncor{
-    cursor: auto;
+    cursor: not-allowed;
     /* color: white; */
     /* border:  1px   solid white; */
     background-color: transparent !important;  
