@@ -189,13 +189,20 @@ margin-right: 10px;
 /*  */
 
 .targetfotWidth{
-    width: 134px;
+    width: 120px;
     /* width: 100px; */
+    font-size: 10px;
+}
+#btn1 .targetbloodGroup{
+    font-size: 12px;
 }
 
-/* @media(max-width: 600px){
+@media(max-width: 350px){
     .targetbloodGroup{
         width: auto;
         height: auto;
     }
-} */
+    #head{
+        display: none;
+    }
+}
