@@ -34,6 +34,26 @@ function signIn(){
       })
     }
     // *******************************************************************************************************************************
+    // let targetBtn = document.getElementById('target');
+    let targetBtn =  document.getElementsByClassName('targetbloodGroup')
+    let bloodGroup = document.getElementById('bloodGroup');
+    // targetBtn.addEventListener('click', 
+      for(let i = 0 ; i<targetBtn.length; i++){
+       
+ 
+      targetBtn[i].addEventListener('click',    function blood(){ 
+        
+        bloodGroup.innerHTML = this.innerHTML;
+      console.log(this);
+    
+    
+        // console.log(targetBtn);
+
+      })
+    }
+  //  console.log( bloodGroup.innerText  = targetBtn);
+    // )
+    
 
 // *******************************************************************************************************************************
 // *******************************************************************************************************************************
