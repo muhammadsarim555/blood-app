@@ -160,8 +160,21 @@ margin-right: 10px;
         text-align: center;
     }
 }}
+.targetDiv{
+    border:  1px   solid white;
+    padding: 8px;
+    color: white;
+    
+}
+/* .targetSpan{
+    padding-left: 2px;
+} */
 .targetAncor{
-    pointer:  ;
+    cursor: auto;
+    /* color: white; */
+    /* border:  1px   solid white; */
+    background-color: transparent !important;  
+
 }
 /*  */
 
