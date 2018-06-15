@@ -1,4 +1,15 @@
+// var overlay = document.getElementById('overlay');
+// setInterval(load, 3000)
 
+
+//     function load () {
+        
+        
+//         // document.body.removeChild(overlay);
+//         document.querySelector('div').style.display = 'none';
+//     }
+  
+// *****************************************************************************************************************************
 
 // Animations init
 new WOW().init();
