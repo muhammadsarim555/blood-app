@@ -44,7 +44,7 @@ function signIn(){
       targetBtn[i].addEventListener('click',    function blood(){ 
         
         bloodGroup.innerHTML = this.innerHTML;
-      console.log(this);
+      // console.log(this);
     
     
         // console.log(targetBtn);
@@ -56,6 +56,13 @@ function signIn(){
     
 
 // *******************************************************************************************************************************
+
+let btn1 = document.getElementById('btn1');
+btn1.addEventListener('click', function h(){
+      // document.getElementsByClassName('targetbloodGroup').style.display = "none";
+      btn1.style.display = 'none';
+} )
+
 // *******************************************************************************************************************************
 // *******************************************************************************************************************************
 // *******************************************************************************************************************************
