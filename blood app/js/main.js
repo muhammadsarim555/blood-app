@@ -47,11 +47,12 @@ function googelSignIn(){
 
       })
     }
-
-    let a = document.getElementById('objData');
-    a.addEventListener('load' , function objData(){
-        a.innerHTML = user.email;
-    })
+    console.log(user);
+    // function objData(){
+    // let a = document.getElementById('objData');
+    // // a.addEventListener('load' , 
+    //     a.innerHTML = user.email;
+    // }
 
     // *******************************************************************************************************************************
     // let targetBtn = document.getElementById('target');
