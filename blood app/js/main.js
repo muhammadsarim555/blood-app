@@ -28,9 +28,10 @@ function googelSignIn(){
         console.log('user', user);
         console.log('email', user.email);
         console.log('name', user.displayName);
-        
-        
+        localStorage.setItem('userObject', JSON.stringify(user));
+       
         // ...
+
       })
       .catch(function(error) {
         // Handle Errors here.
@@ -220,3 +221,7 @@ if ('serviceWorker' in navigator) {
         .register('../sw.js')
         .then(function () { console.log('Service Worker Registered'); })
 }
+
+var obj= localStorage.getItem('userObject')
+var userdata = JSON.parse(obj) 
+console.log(userdata,"=============");

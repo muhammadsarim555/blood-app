@@ -65,10 +65,10 @@ body{
     /* bottom: 20px; */
 
 }
-.btnProfile{
-    visibility: hidden !important; 
+/* .btnProfile{ */
+    /* visibility: hidden !important;  */
     /* color: blue; */
-}
+/* } */
 .targetSignUp{
     margin-bottom: 0px;
 }
