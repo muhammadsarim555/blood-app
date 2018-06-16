@@ -47,6 +47,12 @@ function googelSignIn(){
 
       })
     }
+
+    let a = document.getElementById('objData');
+    a.addEventListener('load' , function objData(){
+        a.innerHTML = user.email;
+    })
+
     // *******************************************************************************************************************************
     // let targetBtn = document.getElementById('target');
     let targetBtn =  document.getElementsByClassName('targetbloodGroup')
@@ -100,67 +106,67 @@ const auth = firebase.auth()
 const firebaseDb = firebase.database()
 
 
-// signup function
-function signUp() {
-  // var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
+// // signup function
+// function signUp() {
+//   // var name = document.getElementById('name').value;
+//   var email = document.getElementById('email').value;
+//   var password = document.getElementById('password').value;
 
-  console.log(email, password)
+//   console.log(email, password)
 
-  if (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-      swal({
-          title: "Warning!",
-          text: "Please enter you email address. example@gmail.com",
-          icon: "warning",
-      });
+//   if (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+//       swal({
+//           title: "Warning!",
+//           text: "Please enter you email address. example@gmail.com",
+//           icon: "warning",
+//       });
   
-  // if (name === '' || name === " ") {
-      // swal({
-          // title: "Warning!",
-          // text: "Please enter you name.",
-          // icon: "warning",
-      // });
-  }
-  else if (password.length < 6) {
-      swal({
-          title: "Warning!",
-          text: "Please enter atleast 6 number",
-          icon: "warning",
-      });
-  } else {
-      auth.createUserWithEmailAndPassword(email, password)
-          .then((data) => {
-              var uid = data.user.uid;
-              var objData = {
-                  email: email,
-                  password : password,
-                  uid : uid,
-              }
-              console.log('success');
-              console.log('uid', uid);
-              firebaseDb.ref("BloodUsers/" + uid + '/').set(objData)
-                  .then(()=> {
-                      swal({
-                          title: "Success!",
-                          text: "congratulations",
-                          icon: "success",
-                      });
-                      // location = 'index.html'
-                  })
-          })
-          .catch((error) => {
-            console.log(error.message)
-              // Handle Errors here.
-              swal({
-                  title: "Warning!",
-                  text: error.message,
-                  icon: "warning",
-              });
-              // ...
-          });
-  }
-}
+//   // if (name === '' || name === " ") {
+//       // swal({
+//           // title: "Warning!",
+//           // text: "Please enter you name.",
+//           // icon: "warning",
+//       // });
+//   }
+//   else if (password.length < 6) {
+//       swal({
+//           title: "Warning!",
+//           text: "Please enter atleast 6 number",
+//           icon: "warning",
+//       });
+//   } else {
+//       auth.createUserWithEmailAndPassword(email, password)
+//           .then((data) => {
+//               var uid = data.user.uid;
+//               var objData = {
+//                   email: email,
+//                   password : password,
+//                   uid : uid,
+//               }
+//               console.log('success');
+//               console.log('uid', uid);
+//               firebaseDb.ref("BloodUsers/" + uid + '/').set(objData)
+//                   .then(()=> {
+//                       swal({
+//                           title: "Success!",
+//                           text: "congratulations",
+//                           icon: "success",
+//                       });
+//                       // location = 'index.html'
+//                   })
+//           })
+//           .catch((error) => {
+//             console.log(error.message)
+//               // Handle Errors here.
+//               swal({
+//                   title: "Warning!",
+//                   text: error.message,
+//                   icon: "warning",
+//               });
+//               // ...
+//           });
+//   }
+// }
 
 // *******************************************************************************************************************************
 
