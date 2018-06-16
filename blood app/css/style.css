@@ -263,3 +263,7 @@ margin-right: 10px;
     width: 100%;
     font-size: 15px;
 }
+
+#targetIconButton .btn{
+    width: 200px;
+}
