@@ -93,6 +93,9 @@ function googelSignIn(){
 // })
   
 // *******************************************************************************************************************************
+const auth = firebase.auth()
+const firebaseDb = firebase.database()
+
 
 // signup function
 function signUp() {
@@ -131,10 +134,10 @@ function signUp() {
                   password : password,
                   uid : uid,
               }
+              console.log('success');
               console.log('uid', uid);
-              firebaseDb.ref("users/" + uid + '/').set(objData)
+              firebaseDb.ref("BloodUsers/" + uid + '/').set(objData)
                   .then(()=> {
-                      
                       swal({
                           title: "Success!",
                           text: "congratulations",
@@ -144,6 +147,7 @@ function signUp() {
                   })
           })
           .catch((error) => {
+            console.log(error.message)
               // Handle Errors here.
               swal({
                   title: "Warning!",
