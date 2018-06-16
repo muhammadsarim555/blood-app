@@ -213,17 +213,17 @@ margin-right: 10px;
     /* position: fixed; */
     /* width: auto; */
 }
-@media(max-width: 800px){
+/* @media(max-width: 800px){
     #head{
         display: none;
     }
-}
+} */
 
-@media(min-width: 375px){
+/* @media(min-width: 375px){
     #head{
         margin-top: 20px;
     }
-}
+} */
 @media(max-width: 350px){
     /* .targetbloodGroup{
         width: auto;
