@@ -47,7 +47,7 @@ function googelSignIn(){
 
       })
     }
-    console.log(user);
+    
     // function objData(){
     // let a = document.getElementById('objData');
     // // a.addEventListener('load' , 
