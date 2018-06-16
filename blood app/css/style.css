@@ -247,3 +247,19 @@ margin-right: 10px;
 /* *************************************************************************************** */
 
 /* ****************************************************** */
+#targetIconButton .tbtn{
+    width: 200px;
+}
+#dropdown {
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+}
+#dropdown option{
+    background-color: #c00101;
+}
+#bloodGroup2{
+    width: 100%;
+    font-size: 15px;
+}

@@ -161,23 +161,42 @@ function signUp() {
 
 // *******************************************************************************************************************************
 
-function changeValueOfSignUp(){
-    let targetLogin = document.getElementById('targetLogin');
-    let targetLoginBtn = document.getElementById('targetLoginBtn');
-    let password = document.getElementById('password');
-    targetLogin.innerHTML =` <div class="text-center ">
-    <h3 class="white-text " id="targetLogin"><i class="fa fa-user white-text"></i> Register:</h3>
+// Material Select Initialization
+// $(document).ready(function() {
+//     $('.mdb-select').material_select();
+//   });
+
+
+// function formRegister(){
+//    let targetRegisterBtnForLink = document.getElementById('targetRegisterBtnForLink').innerHTML = 'Login';
+//    targetRegisterBtnForLink.setAttribute('id' , 'targetLoginBtnForLink' )
+//    let targetLoginBtn = document.getElementById('targetLoginBtn').innerHTML = 'Register';
+// //    targetLoginBtn.setAttribute('id' , 'targetRegisterBtn')
+//     let targetLogin=  document.getElementById('targetLogin').innerHTML = 'Register';
+//     }
+
+
+// function changeValueOfSignUp(){
+//     let targetLogin = document.getElementById('targetLogin');
+//     let targetLoginBtn = document.getElementById('targetLoginBtn').style.display='none';
+//     let targetRegisterBtn = document.getElementById('targetRegisterBtn').style.display = "inline";
+//     let password = document.getElementById('password');
+//     let targetRegisterBtnForLink = document.getElementById('targetRegisterBtnForLink').style.display = 'none';
+//     let targetLoginBtnForLink = document.getElementById('targetLoginBtnForLink').style.display = 'inline';
+//     targetLogin.innerHTML =` <div class="text-center ">
+//     <h3 class="white-text " id="targetLogin"><i class="fa fa-user white-text"></i> Register:</h3>
     
-</div>`
-targetLoginBtn.style.display = 'none';
+// </div>`
+// targetLoginBtn.style.display = 'none';
 
-}
+// }
 
-function btnLoad(){
-    let targetRegisterBtn = document.getElementById('targetRegisterBtn').style.display ="none";
-    let targetLoginBtnForLink = document.getElementById('targetLoginBtnForLink').style.display = 'none';
+// for hiding register form
+// function btnLoad(){
+//     let targetRegisterBtn = document.getElementById('targetRegisterBtn').style.display ="none";
+//     let targetLoginBtnForLink = document.getElementById('targetLoginBtnForLink').style.display = 'none';
 
-}
+// }
 
 // *******************************************************************************************************************************
 // *******************************************************************************************************************************
