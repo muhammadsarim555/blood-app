@@ -16,7 +16,7 @@ new WOW().init();
 // *******************************************************************************************************************************
 var provider = new firebase.auth.GoogleAuthProvider();
 
-function signIn(){
+function googelSignIn(){
     firebase.auth().signInWithPopup(provider)
     .then(function(result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
@@ -76,33 +76,97 @@ function signIn(){
 
 // *******************************************************************************************************************************
 
-window.addEventListener('load', 
-function chUer(){
-    let targetHome = document.getElementById('targetHomeBtn');
-    let flag = false;
+// window.addEventListener('load', 
+// function chUer(){
+//     let targetHome = document.getElementById('targetHomeBtn');
+//     let flag = false;
 
-    if(flag === true){
+//     if(flag === true){
       
-      targetHome.style.visibility = 'visible';
-    }
-    else{
-      targetHome.style.visibility = 'hidden';
+//       targetHome.style.visibility = 'visible';
+//     }
+//     else{
+//       targetHome.style.visibility = 'hidden';
       
-    }
+//     }
 
-})
+// })
   
-
-
-
-
-
-// *******************************************************************************************************************************
-// *******************************************************************************************************************************
-// *******************************************************************************************************************************
-// *******************************************************************************************************************************
-// *******************************************************************************************************************************
-// *******************************************************************************************************************************
-// *******************************************************************************************************************************
 // *******************************************************************************************************************************
 
+// signup function
+function signUp() {
+  // var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  console.log(email, password)
+
+  if (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
+      swal({
+          title: "Warning!",
+          text: "Please enter you email address. example@gmail.com",
+          icon: "warning",
+      });
+  
+  // if (name === '' || name === " ") {
+      // swal({
+          // title: "Warning!",
+          // text: "Please enter you name.",
+          // icon: "warning",
+      // });
+  }
+  else if (password.length < 6) {
+      swal({
+          title: "Warning!",
+          text: "Please enter atleast 6 number",
+          icon: "warning",
+      });
+  } else {
+      auth.createUserWithEmailAndPassword(email, password)
+          .then((data) => {
+              var uid = data.user.uid;
+              var objData = {
+                  email: email,
+                  password : password,
+                  uid : uid,
+              }
+              console.log('uid', uid);
+              firebaseDb.ref("users/" + uid + '/').set(objData)
+                  .then(()=> {
+                      
+                      swal({
+                          title: "Success!",
+                          text: "congratulations",
+                          icon: "success",
+                      });
+                      // location = 'index.html'
+                  })
+          })
+          .catch((error) => {
+              // Handle Errors here.
+              swal({
+                  title: "Warning!",
+                  text: error.message,
+                  icon: "warning",
+              });
+              // ...
+          });
+  }
+}
+
+// *******************************************************************************************************************************
+
+
+// *******************************************************************************************************************************
+// *******************************************************************************************************************************
+// *******************************************************************************************************************************
+// *******************************************************************************************************************************
+// *******************************************************************************************************************************
+// *******************************************************************************************************************************
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+        .register('../sw.js')
+        .then(function () { console.log('Service Worker Registered'); })
+}
