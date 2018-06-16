@@ -161,6 +161,23 @@ function signUp() {
 
 // *******************************************************************************************************************************
 
+function changeValueOfSignUp(){
+    let targetLogin = document.getElementById('targetLogin');
+    let targetLoginBtn = document.getElementById('targetLoginBtn');
+    let password = document.getElementById('password');
+    targetLogin.innerHTML =` <div class="text-center ">
+    <h3 class="white-text " id="targetLogin"><i class="fa fa-user white-text"></i> Register:</h3>
+    
+</div>`
+targetLoginBtn.style.display = 'none';
+
+}
+
+function btnLoad(){
+    let targetRegisterBtn = document.getElementById('targetRegisterBtn').style.display ="none";
+    let targetLoginBtnForLink = document.getElementById('targetLoginBtnForLink').style.display = 'none';
+
+}
 
 // *******************************************************************************************************************************
 // *******************************************************************************************************************************

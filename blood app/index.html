@@ -38,7 +38,7 @@
 
 <!-- ************************************************************************************************************************************** -->
 
-<body >
+<body onload="btnLoad()">
 
  
 <!-- ************************************************************************************************************************************** -->
@@ -133,8 +133,8 @@
                                         <div class="card wow fadeInRight" data-wow-delay="0.3s">
                                             <div class="card-body">
                                                 <!--Header-->
-                                                <div class="text-center targetRegister">
-                                                    <h3 class="white-text "><i class="fa fa-user white-text"></i> Register:</h3>
+                                                <div class="text-center ">
+                                                    <h3 class="white-text " id="targetLogin"><i class="fa fa-user white-text"></i> Login:</h3>
                                                     <hr class="hr-light">
                                                 </div>
     
@@ -156,8 +156,19 @@
                                                     <label for="password" class="active">Your password</label>
                                                 </div>
                                                 <div class="text-center">
-                                                    <button class="btn btn-outline-white" onclick="signUp()">Sign up</button>
+                                                    <button class="btn btn-outline-white" onclick="login()" id="targetLoginBtn">Login</button>
+                                                    <button class="btn btn-outline-white" onclick="signUp()" id="targetRegisterBtn">Register</button>
                                                     
+                                                    <div class="white-text" >
+                                                    <span style="display:block; position:absolute; font-size:18px;">Already have an account : 
+                                             <a href="#" style="float:right" id="targetRegisterBtnForLink" onclick="changeValueOfSignUp()" >&nbsp; Register  </a> </span>
+                                        </div>
+
+                                        <div class="white-text" >
+                                            <span style="display:block; position:absolute; font-size:18px;">Already have an account : 
+                                     <a href="#" style="float:right" id="targetLoginBtnForLink" onclick="changeValueOfSignUp()" >&nbsp; Login  </a> </span>
+                                </div>
+
                                                     <hr class="hr-light mb-3 mt-4">
                                                     
                                                         <div class="inline-ul text-center d-flex justify-content-center">
