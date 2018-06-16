@@ -204,7 +204,7 @@ margin-right: 10px;
     width: 125px;
     /* width: auto; */
 }
-@media(min-width: 800px){
+@media(max-width: 800px){
     #head{
         display: none;
     }
