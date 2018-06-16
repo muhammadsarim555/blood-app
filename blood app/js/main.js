@@ -26,6 +26,9 @@ function googelSignIn(){
         // console.log(user)
         // console.log('token', token);
         console.log('user', user);
+        console.log('email', user.email);
+        console.log('name', user.displayName);
+        
         
         // ...
       })
