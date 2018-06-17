@@ -116,17 +116,19 @@ function googelSignIn(){
       let postBottle = document.getElementById('postBottle').value;
       let postBloodGroup = document.getElementById('postBloodGroup').value;
         console.log(postName, postNumber,postBottle,postBloodGroup);
-  }
-   e;
+        
+        
+        if(postName >= 3 ){
+          document.getElementById('postErrorName').innerHTML = 'good!'
+            
+        }
+          else{
+          document.getElementById('postErrorName').innerHTML = 'sorry'
+        }
+      }
+    // else{
 
-    
-    //   if (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
-      //       swal({
-    //           title: "Warning!",
-    //           text: "Please enter you email address. example@gmail.com",
-    //           icon: "warning",
-    //       });
-    
+    // }
     //   // if (name === '' || name === " ") {
       //       // swal({
         //           // title: "Warning!",
