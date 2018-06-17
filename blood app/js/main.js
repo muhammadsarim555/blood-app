@@ -109,13 +109,16 @@ function googelSignIn(){
   const firebaseDb = firebase.database()
   
   
-  // // signup function
-  // function signUp() {
-    //   // var name = document.getElementById('name').value;
-    //   var email = document.getElementById('email').value;
-    //   var password = document.getElementById('password').value;
+  // post  function
+  function post() {
+      let postName = document.getElementById('PostName').value;
+      let postNumber = document.getElementById('postNumber').value;
+      let postBottle = document.getElementById('postBottle').value;
+      let postBloodGroup = document.getElementById('postBloodGroup').value;
+        console.log(postName, postNumber,postBottle,postBloodGroup);
+  }
+   e;
 
-    //   console.log(email, password)
     
     //   if (!email.match(/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/)) {
       //       swal({
