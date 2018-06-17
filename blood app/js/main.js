@@ -32,7 +32,7 @@ function googelSignIn(){
         console.log('email', user.email);
         console.log('name', user.displayName);
         localStorage.setItem('userObject', JSON.stringify(user));
-       if(home === user){
+       if(user === true ){
         home.style.display = 'inline';
        }
         // ...
