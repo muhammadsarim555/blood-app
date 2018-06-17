@@ -14,7 +14,10 @@
 // Animations init
 new WOW().init();
 // *******************************************************************************************************************************
+var home = document.getElementById('targetHomeBtn');
+home.style.display = 'none';
 var provider = new firebase.auth.GoogleAuthProvider();
+
 
 function googelSignIn(){
     firebase.auth().signInWithPopup(provider)
@@ -29,7 +32,9 @@ function googelSignIn(){
         console.log('email', user.email);
         console.log('name', user.displayName);
         localStorage.setItem('userObject', JSON.stringify(user));
-       
+       if(home === user){
+        home.style.display = 'inline';
+       }
         // ...
 
       })
