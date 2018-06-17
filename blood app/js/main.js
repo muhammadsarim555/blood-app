@@ -118,17 +118,20 @@ function googelSignIn(){
         console.log(postName, postNumber,postBottle,postBloodGroup);
          let postErrorName =  document.getElementById('postErrorName');
          let postErrorNumber = document.getElementById('postErrorNumber');
-          
+          let postErrorBottles = document.getElementById('postErrorBottles');
         
         if(postName.length >= 3 ){
           postErrorName.style.color = 'lightgreen'
-        postErrorName.innerHTML = 'Good!!'
+        postErrorName.innerHTML = 'Good!'
             
         }
           else if (postErrorNumber.length === 11){
             postErrorNumber.style.color = 'lightgreen'
             postErrorNumber.innerHTML = 'Good!'
           // document.getElementById('postErrorName').innerHTML = 'sorry'
+        }
+        else if(postErrorBottles ){
+
         }
       // postName.reset();
       }
