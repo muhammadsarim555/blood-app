@@ -138,12 +138,15 @@ function googelSignIn(){
         if(postErrorNumber.length === 11 ){
           postErrorNumber.style.color = 'lightgreen'
           postErrorNumber.innerHTML = 'Good!'
-         
         }
         else{
           postErrorNumber.innerHTML = 'numbers must be 11 '
           postErrorNumber.style.color = '#ff4081'
           
+        }
+        if(postErrorBottles.length === 11 ){
+          postErrorBottles.style.color = 'lightgreen'
+          postErrorBottles.innerHTML = 'Good!'
         }
 
 
