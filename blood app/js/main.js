@@ -118,13 +118,14 @@ function googelSignIn(){
         console.log(postName, postNumber,postBottle,postBloodGroup);
         
         
-        if(postName >= 3 ){
+        if(!postName === 3 ){
           document.getElementById('postErrorName').innerHTML = 'good!'
             
         }
-          else{
-          document.getElementById('postErrorName').innerHTML = 'sorry'
-        }
+        //   else{
+        //   document.getElementById('postErrorName').innerHTML = 'sorry'
+        // }
+      // postName.reset();
       }
     // else{
 
