@@ -255,9 +255,12 @@ margin-right: 10px;
     width: 100%;
     background-color: transparent;
     color: white;
+    /* height: 30px; */
+    padding: 10px;
 }
 .dropdown option{
     background-color: #c00101;
+    
 }
 #bloodGroup2{
     width: 100%;
