@@ -116,15 +116,19 @@ function googelSignIn(){
       let postBottle = document.getElementById('postBottle').value;
       let postBloodGroup = document.getElementById('postBloodGroup').value;
         console.log(postName, postNumber,postBottle,postBloodGroup);
+         let postErrorName =  document.getElementById('postErrorName');
+          
         
-        
-        if(!postName === 3 ){
-          document.getElementById('postErrorName').innerHTML = 'good!'
+        if(postName.length >= 3 ){
+          postErrorName.style.color = 'lightgreen';
+        postErrorName.innerHTML = 'good!'
             
         }
-        //   else{
-        //   document.getElementById('postErrorName').innerHTML = 'sorry'
-        // }
+          else{
+          postErrorName.style.color = '#ff1744';
+          postErrorName.innerHTML = 'sorry';
+          // document.getElementById('postErrorName').innerHTML = 'sorry'
+        }
       // postName.reset();
       }
     // else{
