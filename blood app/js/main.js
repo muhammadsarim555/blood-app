@@ -119,21 +119,34 @@ function googelSignIn(){
          let postErrorName =  document.getElementById('postErrorName');
          let postErrorNumber = document.getElementById('postErrorNumber');
           let postErrorBottles = document.getElementById('postErrorBottles');
-        
+        let postErrorBloodGroup = document.getElementById('postErrorBloodGroup');
+
         if(postName.length >= 3 ){
           postErrorName.style.color = 'lightgreen'
         postErrorName.innerHTML = 'Good!'
             
         }
-          else if (postErrorNumber.length === 11){
-            postErrorNumber.style.color = 'lightgreen'
-            postErrorNumber.innerHTML = 'Good!'
+        // else {
+
+        // }
+          else 
+          // ? (postErrorNumber.length === 11){
+           { postErrorName.style.color = '#ff4081'
+           postErrorName.innerHTML = 'Name must be 3 characters!'
           // document.getElementById('postErrorName').innerHTML = 'sorry'
         }
-        else if(postErrorBottles ){
-
+        if(postErrorNumber.length === 11 ){
+          postErrorNumber.style.color = 'lightgreen'
+          postErrorNumber.innerHTML = 'Good!'
+         
         }
-      // postName.reset();
+        else{
+          postErrorNumber.innerHTML = 'numbers must be 11 '
+          postErrorNumber.style.color = '#ff4081'
+          
+        }
+
+
       }
     
     // else{
