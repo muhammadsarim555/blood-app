@@ -117,44 +117,100 @@ function googelSignIn(){
       let postNumber = document.getElementById('postNumber').value;
       let postBottle = document.getElementById('postBottle').value;
       let postBloodGroup = document.getElementById('postBloodGroup').value;
-        console.log(postName, postNumber,postBottle,postBloodGroup);
+        // console.log(postName, postNumber,postBottle,postBloodGroup);
          let postErrorName =  document.getElementById('postErrorName');
          let postErrorNumber = document.getElementById('postErrorNumber');
           let postErrorBottles = document.getElementById('postErrorBottles');
         let postErrorBloodGroup = document.getElementById('postErrorBloodGroup');
 
-        if(postName.length >= 3 ){
-          postErrorName.style.color = '#2BBBAD'
-        postErrorName.innerHTML = 'Good!'
-            
-        }
-        
-          else 
-          
-           { postErrorName.style.color = '#ffbb33'
-           postErrorName.innerHTML = 'Name must be 3 characters!'
-        }
 
-        if(postNumber.length === 11   ){
-          postErrorNumber.style.color = '#2BBBAD'
-          postErrorNumber.innerHTML = 'Good!'
-        }
-        else{
-          postErrorNumber.style.color = '#ffbb33'
-          postErrorNumber.innerHTML = 'numbers must be 11 '
-        }
+  }
+
+
+        let modal = document.getElementById('modal');
+        modal.innerHTML = `<!-- Central Modal Medium Success -->
+        <div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-notify modal-success" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <p class="heading lead">Modal Success</p>
         
-        if(!postBottle.length === 1 ){
-          postErrorBottles.style.color = '#2BBBAD'
-          postErrorBottles.innerHTML = 'Good!'
-        }
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" class="white-text">&times;</span>
+                                                </button>
+                    </div>
+        
+                    <!--Body-->
+                    <div class="modal-body">
+                        <div class="text-center">
+                            <i class="fa fa-check fa-4x mb-3 animated rotateIn"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iusto nulla aperiam
+                                blanditiis ad consequatur in dolores culpa, dignissimos, eius non possimus fugiat.
+                                Esse ratione fuga, enim, ab officiis totam.</p>
+                        </div>
+                    </div>
+        
+                    <!--Footer-->
+                    <div class="modal-footer justify-content-center">
+                        <a type="button" class="btn btn-primary">Get it now <i class="fa fa-diamond ml-1"></i></a>
+                        <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">No, thanks</a>
+                    </div>
+                </div>
+                <!--/.Content-->
+            </div>
+        </div>
+        <!-- Central Modal Medium Success-->
+        
+        <!-- Button trigger modal -->
+        <div class="text-center">
+            <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#centralModalSuccess">Launch Modal Success <i class="fa fa-eye ml-1"></i></a>
+        </div>`
+1
+        
+      
+      
+      
+    
+
+
+
+
+        // if(postName.length >= 3 ){
+        //   postErrorName.style.color = '#2BBBAD'
+        // postErrorName.innerHTML = 'Good!'
+            
+        // }
+        
+        //   else 
+          
+        //    { postErrorName.style.color = '#ffbb33'
+        //    postErrorName.innerHTML = 'Name must be 3 characters!'
+        // }
+
+        // if(postNumber.length === 11   ){
+        //   postErrorNumber.style.color = '#2BBBAD'
+        //   postErrorNumber.innerHTML = 'Good!'
+        // }
         // else{
-        //   postErrorBottles.style.color = '#ff4081'
-        //   ff4081.innerHTML = "Selet any one"
+        //   postErrorNumber.style.color = '#ffbb33'
+        //   postErrorNumber.innerHTML = 'numbers must be 11 '
+        // }
+        
+        // if(postBottle === " " ){
+        //   alert('good');
+          // postErrorBottles.style.color = '#2BBBAD'
+          // postErrorBottles.innerHTML = 'Good!'
+        // }
+        // else{
+        //  alert('d');
+          // postErrorBottles.style.color = '#ff4081'
+          // postErrorBottles.innerHTML = "Select any one"
         // }
 
 
-      }
+      // }
     
     // else{
 
