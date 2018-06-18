@@ -22,16 +22,33 @@ function googelSignIn(){
   firebase.auth().signInWithPopup(provider)
   .then(function(result) {
     // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = result.credential.accessToken;
-        // The signed-in user info.
-        var user = result.user;
-        var targetHomeBtn = document.getElementById('targetHomeBtn');
+    var token = result.credential.accessToken;
+    
+    // The signed-in user info.
+    var user = result.user;
+    var targetHomeBtn = document.getElementById('targetHomeBtn');
+    console.log('email', user.email);
+    console.log('name', user.displayName);
+   
+    var uid = result.user.uid;
+    var obj = {
+          name: postName,
+          number: postNumber ,
+          bottles: postBottle ,
+          bloodGroup : postBloodGroup  ,
+        // uid : uid,
+        }
+        // console.log(currentUser)
+        firebaseDb.ref("BloodUsers/" + uid + "/").set(obj)
+        console.log('success insert in database ');
+        console.log('uid', uid);
+
+
+
 
         // console.log(user)
         // console.log('token', token);
         console.log('user', user);
-        console.log('email', user.email);
-        console.log('name', user.displayName);
         localStorage.setItem('userObject', JSON.stringify(user));
         // ...
         
@@ -157,14 +174,7 @@ function googelSignIn(){
         }
         else{
           postErrorBottles.style.display = 'none';
-          
-          // postErrorBottles.style.color = '#2BBBAD'
-          // postErrorBottles.innerHTML = 'Good!'
-          
-          
-          return true;
-        
-        }
+          }
       
         if(postBloodGroup ==  1){
           // alert('chekc')
@@ -181,7 +191,7 @@ function googelSignIn(){
       //     postErrorBloodGroup.innerHTML = 'Good!'
           
           
-          return true;
+          // return true;
         
         }
       
@@ -189,18 +199,8 @@ function googelSignIn(){
 // .then((data) => {
                 // var uid = data.user.uid;
         
-                var obj = {
-                name: postName,
-                number: postNumber ,
-                bottles: postBottle ,
-                bloodGroup : postBloodGroup  ,
-              // uid : uid,
-              }
-              // console.log(currentUser)
-              console.log('success');
-              // console.log('uid', uid);
-              firebaseDb.ref("BloodUsers/" ).set(obj)
-              alert('ok')
+             
+              // alert('ok')
             }
     //                       // location = 'index.html'
                       // })
