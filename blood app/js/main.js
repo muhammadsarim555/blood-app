@@ -30,20 +30,7 @@ function googelSignIn(){
     console.log('email', user.email);
     console.log('name', user.displayName);
    
-    var uid = result.user.uid;
-    var obj = {
-          name: postName,
-          number: postNumber ,
-          bottles: postBottle ,
-          bloodGroup : postBloodGroup  ,
-        // uid : uid,
-        }
-        // console.log(currentUser)
-        firebaseDb.ref("BloodUsers/" + uid + "/").set(obj)
-        console.log('success insert in database ');
-        console.log('uid', uid);
-
-
+    
 
 
         // console.log(user)
@@ -186,22 +173,30 @@ function googelSignIn(){
         
         else{
           postErrorBloodGroup.style.display = 'none';
-          
-      //     postErrorBloodGroup.style.color = '#2BBBAD'
-      //     postErrorBloodGroup.innerHTML = 'Good!'
-          
-          
-          // return true;
-        
-        }
+      }
       
-// auth.currentUser
-// .then((data) => {
-                // var uid = data.user.uid;
-        
-             
-              // alert('ok')
-            }
+    
+    // var uid = result.user.uid;
+    var obj = {
+      name: postName,
+      number: postNumber ,
+      bottles: postBottle ,
+      bloodGroup : postBloodGroup  ,
+    
+    // uid : uid,
+    }
+  
+    // console.log(currentUser)
+    firebaseDb.ref("BloodUsers/"  + "/").push(obj)
+    console.log('success insert in database ');
+    // console.log('uid', uid);
+  
+
+    
+    
+    
+    
+    }
     //                       // location = 'index.html'
                       // })
               // .catch((error) => {
