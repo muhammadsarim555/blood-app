@@ -25,6 +25,8 @@ function googelSignIn(){
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+        var targetHomeBtn = document.getElementById('targetHomeBtn');
+
         // console.log(user)
         // console.log('token', token);
         console.log('user', user);
@@ -122,32 +124,34 @@ function googelSignIn(){
         let postErrorBloodGroup = document.getElementById('postErrorBloodGroup');
 
         if(postName.length >= 3 ){
-          postErrorName.style.color = 'lightgreen'
+          postErrorName.style.color = '#2BBBAD'
         postErrorName.innerHTML = 'Good!'
             
         }
-        // else {
-
-        // }
+        
           else 
-          // ? (postErrorNumber.length === 11){
-           { postErrorName.style.color = '#ff4081'
+          
+           { postErrorName.style.color = '#ffbb33'
            postErrorName.innerHTML = 'Name must be 3 characters!'
-          // document.getElementById('postErrorName').innerHTML = 'sorry'
         }
-        if(postErrorNumber.length === 11 ){
-          postErrorNumber.style.color = 'lightgreen'
+
+        if(postNumber.length === 11   ){
+          postErrorNumber.style.color = '#2BBBAD'
           postErrorNumber.innerHTML = 'Good!'
         }
         else{
+          postErrorNumber.style.color = '#ffbb33'
           postErrorNumber.innerHTML = 'numbers must be 11 '
-          postErrorNumber.style.color = '#ff4081'
-          
         }
-        if(postErrorBottles.length === 11 ){
-          postErrorBottles.style.color = 'lightgreen'
+        
+        if(!postBottle.length === 1 ){
+          postErrorBottles.style.color = '#2BBBAD'
           postErrorBottles.innerHTML = 'Good!'
         }
+        // else{
+        //   postErrorBottles.style.color = '#ff4081'
+        //   ff4081.innerHTML = "Selet any one"
+        // }
 
 
       }
