@@ -126,8 +126,7 @@ function googelSignIn(){
 
   
         if(postName.length >= 3 ){
-          postErrorName.style.color = '#2BBBAD'
-        postErrorName.innerHTML = 'Good!'
+          postErrorName.style.display = 'none'
             
         }
         
@@ -140,8 +139,7 @@ function googelSignIn(){
           }
 
         if(postNumber.length === 11   ){
-          postErrorNumber.style.color = '#2BBBAD'
-          postErrorNumber.innerHTML = 'Good!'
+          postErrorNumber.style.display = 'none'
         }
         else{
           postErrorNumber.style.color = '#ffbb33'
@@ -149,16 +147,42 @@ function googelSignIn(){
           return false
         }
         
-        if(!postBottle === "" ){
-          alert('good');
-          postErrorBottles.style.color = '#2BBBAD'
-          postErrorBottles.innerHTML = 'Good!'
+        if(postBottle == 0 ){
+          // alert('han')
+          postErrorBottles.style.color = '#ffbb33'
+          postErrorBottles.innerHTML = 'it must be selected'
+          console.log(postBottle);
+          return false;
+          
         }
         else{
-        //  alert('d');
+          postErrorBottles.style.display = 'none';
+          
+          // postErrorBottles.style.color = '#2BBBAD'
+          // postErrorBottles.innerHTML = 'Good!'
+          
+          
+          return true;
         
-          postErrorBottles.style.color = '#ff4081'
-          postErrorBottles.innerHTML = "Select any one"
+        }
+      
+        if(postBloodGroup ==  1){
+          // alert('chekc')
+          postErrorBloodGroup.style.color = '#ffbb33'
+          postErrorBloodGroup.innerHTML = 'select your blood group'
+          console.log(postBloodGroup, 'postBloodGroup')
+          return false;
+        }
+        
+        else{
+          postErrorBloodGroup.style.display = 'none';
+          
+      //     postErrorBloodGroup.style.color = '#2BBBAD'
+      //     postErrorBloodGroup.innerHTML = 'Good!'
+          
+          
+          return true;
+        
         }
 
 

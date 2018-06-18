@@ -33,6 +33,9 @@ body{
 
     background: url("../images/background-blood.jpg")no-repeat  center;
     background-size: cover  ;
+    background-position: center 10%;
+    background-position-x: center;
+    background-position-y: 10%;
     height: 100%;
 }
 }
