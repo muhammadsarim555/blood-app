@@ -168,9 +168,9 @@ function googelSignIn(){
       
         if(postBloodGroup ==  1){
           // alert('chekc')
+          console.log(postBloodGroup, 'postBloodGroup')
           postErrorBloodGroup.style.color = '#ffbb33'
           postErrorBloodGroup.innerHTML = 'select your blood group'
-          console.log(postBloodGroup, 'postBloodGroup')
           return false;
         }
         
@@ -184,9 +184,30 @@ function googelSignIn(){
           return true;
         
         }
-
-
-      }
+      
+// auth.currentUser
+// .then((data) => {
+                // var uid = data.user.uid;
+        
+                var obj = {
+                name: postName,
+                number: postNumber ,
+                bottles: postBottle ,
+                bloodGroup : postBloodGroup  ,
+              // uid : uid,
+              }
+              // console.log(currentUser)
+              console.log('success');
+              // console.log('uid', uid);
+              firebaseDb.ref("BloodUsers/" ).set(obj)
+              alert('ok')
+            }
+    //                       // location = 'index.html'
+                      // })
+              // .catch((error) => {
+                  // console.log(error.message)
+      //               
+      // })
     
     // else{
 
