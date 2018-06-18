@@ -191,7 +191,7 @@ function googelSignIn(){
     console.log('success insert in database ');
     // console.log('uid', uid);
     // reset();
-
+    location = "userpost.html"
     // postName.innerText = " ";
     // postNumber.innerHTML = null;
     // postBottle.innerHTML = null;
