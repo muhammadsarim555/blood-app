@@ -175,7 +175,7 @@ function googelSignIn(){
           postErrorBloodGroup.style.display = 'none';
       }
       
-    
+      
     // var uid = result.user.uid;
     var obj = {
       name: postName,
@@ -190,13 +190,14 @@ function googelSignIn(){
     firebaseDb.ref("BloodUsers/"  + "/").push(obj)
     console.log('success insert in database ');
     // console.log('uid', uid);
-  
+    // reset();
 
+    // postName.innerText = " ";
+    // postNumber.innerHTML = null;
+    // postBottle.innerHTML = null;
+    // postBloodGroup.innerHTML = null;
     
-    
-    
-    
-    }
+  }
     //                       // location = 'index.html'
                       // })
               // .catch((error) => {
