@@ -274,7 +274,7 @@ margin-right: 10px;
     width: 200px;
 }
 
-.card  {
+#card  {
     /* background-color: rgba(163, 6, 6, 0.857);  */
     /* color: red; */
     /* padding: 10px; */
@@ -282,5 +282,15 @@ margin-right: 10px;
     /* border-radius: 20px; */
     /* opacity: .4; */
      width:300px;
+     /* display: inline; */
+     background-color:transparent !important;
+     box-shadow: grey;
+     
+}
+#cardpost{
+    display: inline;
+    background-color: transparent !important;
+    background-color: blue;
+    
 }
 
