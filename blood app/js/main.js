@@ -9,7 +9,6 @@
 //         document.querySelector('div').style.display = 'none';
 //     }
   
-var targetHomeBtn = document.getElementById('targetHomeBtn').style.display = 'none';
 
 // *****************************************************************************************************************************
 
@@ -20,6 +19,7 @@ new WOW().init();
 // var home = document.getElementById('targetHomeBtn').style.display ='none';
 var provider = new firebase.auth.GoogleAuthProvider();
 
+var targetHomeBtn = document.getElementById('targetHomeBtn');
 
 function googelSignIn(){
   firebase.auth().signInWithPopup(provider)
@@ -194,7 +194,7 @@ function googelSignIn(){
     }
   
     // console.log(currentUser)
-    firebaseDb.ref("BloodUsers/"  + "/").push(obj)
+    firebase.database().ref("BloodUsers/"  + "/").push(obj)
     console.log('success insert in database ');
     // console.log('uid', uid);
     // reset();
@@ -206,11 +206,11 @@ function googelSignIn(){
     
   
     
-    firebaseDb.ref("BloodUsers" + "/").once("value", (users) => {
-      let usersList = users.val()
-      console.log(usersList.name, "usersList")
-      var currentuser = auth.currentUser.uid;
-      console.log(currentuser)
+    firebas.database().ref("BloodUsers" + "/").once("value", (postData) => {
+      let postDataList = postData.val()
+      console.log(postDataList.name, "postDataList")
+    //   var currentuser = auth.currentUser.uid;
+    //   console.log(currentuser)
       // user = currentuser
       // for (var key in usersList) {
       //     // console.log(usersList[key])
