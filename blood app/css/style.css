@@ -274,23 +274,24 @@ margin-right: 10px;
     width: 200px;
 }
 
-#card  {
-    /* background-color: rgba(163, 6, 6, 0.857);  */
-    /* color: red; */
-    /* padding: 10px; */
-    /* text-align: center; */
-    /* border-radius: 20px; */
-    /* opacity: .4; */
-     width:300px;
-     /* display: inline; */
-     background-color:transparent !important;
-     box-shadow: grey;
-     
-}
-#cardpost{
-    display: inline;
-    background-color: transparent !important;
-    background-color: blue;
+#targetAll{
+    font-weight: bold;
+    /* color: black; */
     
 }
+.card-group div{
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    
+    /* padding: 30px; */
+}
+.card-group h4 {
+    padding-top: 30px;
+}
 
+.card-group b {
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+}
