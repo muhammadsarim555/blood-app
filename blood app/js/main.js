@@ -36,7 +36,7 @@ function googelSignIn(){
         // console.log('user', user);
         alert('you have got');
         targetHomeBtn.style.display = "inline";
-        targetHomeBtn.style.width = "200px";
+        targetHomeBtn.style.width = "300px";
 
         localStorage.setItem('userObject', JSON.stringify(user));
         // ...
@@ -204,62 +204,31 @@ function googelSignIn(){
     // postBottle.innerHTML = null;
     // postBloodGroup.innerHTML = null;
     
-  }
-    //                       // location = 'index.html'
-                      // })
-              // .catch((error) => {
-                  // console.log(error.message)
-      //               
-      // })
+  
     
-    // else{
+    firebaseDb.ref("BloodUsers" + "/").once("value", (users) => {
+      let usersList = users.val()
+      console.log(usersList.name, "usersList")
+      var currentuser = auth.currentUser.uid;
+      console.log(currentuser)
+      // user = currentuser
+      // for (var key in usersList) {
+      //     // console.log(usersList[key])
+      //     if (currentuser !== key) {
+      //         usersList[key].uid = key
+      //         usersArray.push(usersList[key])
+      //     }
 
-    // }
-    //   // if (name === '' || name === " ") {
-      //       // swal({
-        //           // title: "Warning!",
-  //           // text: "Please enter you name.",
-  //           // icon: "warning",
-  //       // });
-  //   }
-  //   else if (password.length < 6) {
-    //       swal({
-  //           title: "Warning!",
-  //           text: "Please enter atleast 6 number",
-  //           icon: "warning",
-  //       });
-  //   } else {
-    //       auth.createUserWithEmailAndPassword(email, password)
-//           .then((data) => {
-  //               var uid = data.user.uid;
-  //               var objData = {
-    //                   email: email,
-    //                   password : password,
-    //                   uid : uid,
-//               }
-//               console.log('success');
-//               console.log('uid', uid);
-//               firebaseDb.ref("BloodUsers/" + uid + '/').set(objData)
-//                   .then(()=> {
-  //                       swal({
-    //                           title: "Success!",
-    //                           text: "congratulations",
-    //                           icon: "success",
-    //                       });
-    //                       // location = 'index.html'
-    //                   })
-    //           .catch((error) => {
-      //             console.log(error.message)
-      //               // Handle Errors here.
-      //               swal({
-        //                   title: "Warning!",
-        //                   text: error.message,
-    //                   icon: "warning",
-    //               });
-    //               // ...
-    //           });
-    //   }
-    // }
+
+    })
+
+        }
+
+
+
+
+
+
     
     // *******************************************************************************************************************************
     
