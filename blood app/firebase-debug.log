@@ -1,13 +1,26 @@
-[debug] [2018-06-19T19:57:40.923Z] ----------------------------------------------------------------------
-[debug] [2018-06-19T19:57:40.929Z] Command:       E:\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
-[debug] [2018-06-19T19:57:40.929Z] CLI Version:   3.17.3
-[debug] [2018-06-19T19:57:40.930Z] Platform:      win32
-[debug] [2018-06-19T19:57:40.930Z] Node Version:  v8.9.4
-[debug] [2018-06-19T19:57:40.931Z] Time:          Wed Jun 20 2018 00:57:40 GMT+0500 (Pakistan Standard Time)
-[debug] [2018-06-19T19:57:40.931Z] ----------------------------------------------------------------------
+[debug] [2018-06-19T20:02:11.392Z] ----------------------------------------------------------------------
+[debug] [2018-06-19T20:02:11.397Z] Command:       E:\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-19T20:02:11.398Z] CLI Version:   3.17.3
+[debug] [2018-06-19T20:02:11.398Z] Platform:      win32
+[debug] [2018-06-19T20:02:11.398Z] Node Version:  v8.9.4
+[debug] [2018-06-19T20:02:11.399Z] Time:          Wed Jun 20 2018 01:02:11 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-19T20:02:11.400Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-06-19T19:57:40.956Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-06-19T19:57:40.957Z] > authorizing via signed-in user
-[debug] [2018-06-19T19:57:40.962Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/app-blood  
+[debug] [2018-06-19T20:02:11.432Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-19T20:02:11.434Z] > authorizing via signed-in user
+[debug] [2018-06-19T20:02:11.439Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/app-blood  
   
- Wed Jun 20 2018 00:57:40 GMT+0500 (Pakistan Standard Time)
+ Wed Jun 20 2018 01:02:11 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-19T20:02:13.530Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-19T20:02:13.532Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/app-blood/tokens  
+  
+ Wed Jun 20 2018 01:02:13 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-19T20:02:15.005Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'app-blood'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing blood app directory for upload...
+[debug] [2018-06-19T20:02:17.020Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/app-blood/uploads/-LFOd-dkgBbWCJNPKQxl?fileCount=17&message=  
+  
+ Wed Jun 20 2018 01:02:17 GMT+0500 (Pakistan Standard Time)
