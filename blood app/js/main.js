@@ -35,7 +35,9 @@ function googelSignIn(){
     // console.log('token', token);
         // console.log('user', user);
         alert('you have got');
+        targetHomeBtn.style.width = "200px";
         targetHomeBtn.style.display = "inline";
+
         localStorage.setItem('userObject', JSON.stringify(user));
         // ...
         
