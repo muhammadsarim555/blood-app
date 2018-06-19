@@ -274,18 +274,31 @@ margin-right: 10px;
     width: 200px;
 }
 
-#targetAll{
-    font-weight: bold;
-    /* color: black; */
+
+/* #targetAll:hover{
+    box-shadow: 5px 5px white;
+    color: blue;
+} */
+/* #targetAll #footerCard{
+    background-color: rgb(7, 133, 64);
+    width: 100%;
+    margin-bottom: 5px; */
     
+    /* line-height: 20px; */
+    /* position: absolute; */
+    
+    /* bottom: 30px; */
+/* }
+#targetAll #card{
+    padding: 20px;
 }
 .card-group div{
     text-align: center;
     width: 300px;
-    height: 300px;
+    height: 300px; */
     
     /* padding: 30px; */
-}
+/* } */
 .card-group h4 {
     padding-top: 30px;
 }
@@ -294,4 +307,12 @@ margin-right: 10px;
     margin-bottom: 20px;
     margin-top: 50px;
 
+}
+#footerCard{
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px;
+}
+#bloodgroup{
+    margin-bottom: 10px;
 }

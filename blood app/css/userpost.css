@@ -1,0 +1,328 @@
+/* ************************************************************************************************************************************************* */
+/* .title{
+    font-size: 40px;
+    /* text-transform: uppercase;1 */
+    /* font-family: serif; */
+    /* font-weight: bolder; */
+    
+
+/* } */
+/* #drop{ */
+    /* border-radius: 0px; */
+/* } */
+
+
+/* @media (max-width: 450px){
+    .title{
+        font-size: 15px;
+    } */
+/* } */
+
+/* ************************************************************************************************************************************************* */
+/* http://www.friends2support.org/imgs/landingpage/blood_drop_search.gif */
+body{
+    text-transform: capitalize;
+    display: inline;
+}
+.intro-2 {
+    background: url("../images/background-blood.jpg")no-repeat  center;
+    background-size:  cover;
+    
+}
+@media(max-width:300px){
+.intro-2 {
+
+    background: url("../images/background-blood.jpg")no-repeat  center;
+    background-size: cover  ;
+    background-position: center 10%;
+    background-position-x: center;
+    background-position-y: 10%;
+    height: 100%;
+}
+}
+.top-nav-collapse {
+    background-color: #c00101 !important;
+}
+.targetBtn{
+    height: 100%;
+}
+
+@media (max-width: 420px){
+.targetImg{
+
+    height: 100%;
+}
+}
+.navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+}
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+    /* background-color: #c00101 !important; */
+    background: #c00101 !important;
+    }
+}
+.targetProfile{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    /* bottom: 20px; */
+
+}
+/* .btnProfile{ */
+    /* visibility: hidden !important;  */
+    /* color: blue; */
+/* } */
+.targetSignUp{
+    margin-bottom: 0px;
+}
+@media(max-width: 450px){
+    .targetProfile{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        bottom: 20px;
+        
+    }   
+}
+@media (max-width: 300px){
+    .targetProfile{
+    visibility:hidden;
+}
+.btnProfile {
+    visibility: visible !important;
+}
+
+}
+
+
+        /* background-color: blue; */
+   
+
+
+.hm-gradient .full-bg-img {
+    background: -webkit-linear-gradient(45deg, rgba(255, 4, 4, 0.4), rgba(178, 30, 123, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(250, 3, 27, 0.4)), to(rgba(43, 1, 61, 0.4)));
+    background: linear-gradient(to 45deg, rgba(29, 236, 197, 0.4), rgba(253, 19, 19, 0.4) 100%);
+}
+.card {
+    background-color: rgba(229, 228, 255, 0.2);
+}
+
+ .md-form .prefix {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.md-form label {
+    color: #ffffff;
+}
+h6 {
+    line-height: 1.7;
+}
+@media (max-width: 740px) {
+    .full-height,
+    .full-height body,
+    .full-height header,
+    .full-height header .view {
+        height: 1040px;
+    }
+}
+.targetGoogle{
+margin-right: 10px;
+    /* float: left; */
+    /* margin-left: 2px; */
+}
+/* .targetGoogle{
+    float: right;
+} */
+
+@media(max-width: 300px){
+
+    #content{
+        margin-top: 30px;   
+    }
+}
+@media(max-width: 250px){
+
+    #content{
+        margin-top: 60px;   
+    }
+
+
+/* ****************************************************** */
+
+.targetBtn{
+    display: inline;
+    text-decoration: none;
+}
+.btn-group-lg .btn, .btn-group-sm .btn {
+    border-radius: 2px;
+}
+.targetAllBtn{
+    text-align: center;
+}
+@media(max-width: 850px){
+    .targetBtn{
+        text-align: center;
+    }
+    .targetAllBtn{
+        text-align: center;
+    }
+}}
+.targetDiv{
+    border:  1px   solid white;
+    padding: 8px;
+    color: white;
+    
+}
+/* .targetSpan{
+    padding-left: 2px;
+} */
+.targetAncor{
+    cursor: not-allowed;
+    /* color: white; */
+    /* border:  1px   solid white; */
+    background-color: transparent !important;  
+
+}
+#target{
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+@media(max-width: 900px){
+    .targetHome{
+        margin: auto 0px;
+    }
+}
+/*  */
+@media(max-width: 450px){
+    #btn1 .targetbloodGroup{
+        border-radius: 100px;
+        font-size: 10px !important;
+        width: 120px  !important;
+        
+    }
+}
+
+.targetfotWidth{
+    width: 110px;
+    /* width: 100px; */
+    font-size: 8px;
+}
+#btn1 .targetbloodGroup{
+    font-size: 12px;
+    font-weight: bold;
+    width: 125px ;
+    /* position: fixed; */
+    /* width: auto; */
+}
+/* @media(max-width: 800px){
+    #head{
+        display: none;
+    }
+} */
+
+/* @media(min-width: 375px){
+    #head{
+        margin-top: 20px;
+    }
+} */
+@media(max-width: 350px){
+    /* .targetbloodGroup{
+        width: auto;
+        height: auto;
+    } */
+    #head{
+        display: none;
+    }
+}
+#btn1{
+    /* position: absolute; */
+    /* left: 10px; */
+    /* top: 50px; */
+    float: left;
+
+}
+.targetBack{
+    text-align: center;
+}
+
+/* *************************************************************************************** */
+
+/* ****************************************************** */
+#targetIconButton .tbtn{
+    width: 200px;
+}
+.dropdown {
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    /* height: 30px; */
+    padding: 10px;
+}
+.dropdown option{
+    background-color: #c00101;
+    
+}
+#bloodGroup2{
+    width: 100%;
+    font-size: 15px;
+}
+
+#targetIconButton .btn{
+    width: 200px;
+}
+
+#targetAll{
+    font-weight: bold;
+    /* color: black; */
+    /* background-color: gray !important; */
+    /* color: black; */
+    overflow: hidden;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 30px;
+    display: inline-block;
+    /* display: inline; */
+}
+/* #targetAll:hover{
+    box-shadow: 5px 5px white;
+    color: blue;
+} */
+/* #targetAll #footerCard{
+    background-color: rgb(7, 133, 64);
+    width: 100%;
+    margin-bottom: 5px; */
+    
+    /* line-height: 20px; */
+    /* position: absolute; */
+    
+    /* bottom: 30px; */
+/* }
+#targetAll #card{
+    padding: 20px;
+}
+.card-group div{
+    text-align: center;
+    width: 300px;
+    height: 300px; */
+    
+    /* padding: 30px; */
+/* } */
+.card-group h4 {
+    padding-top: 30px;
+}
+
+
+#footerCard{
+    border: 2px solid white;
+    margin: 5px;
+    padding: 5px;
+}
+#bloodgroup{
+    margin-bottom: 10px;
+}
