@@ -9,9 +9,12 @@
 //         document.querySelector('div').style.display = 'none';
 //     }
   
+var targetHomeBtn = document.getElementById('targetHomeBtn').style.display = 'none';
+
 // *****************************************************************************************************************************
 
 // Animations init
+
 new WOW().init();
 // *******************************************************************************************************************************
 // var home = document.getElementById('targetHomeBtn').style.display ='none';
@@ -27,18 +30,19 @@ function googelSignIn(){
     // The signed-in user info.
     var user = result.user;
     var targetHomeBtn = document.getElementById('targetHomeBtn');
-    console.log('email', user.email);
-    console.log('name', user.displayName);
-   
     
-
-
-        // console.log(user)
-        // console.log('token', token);
-        console.log('user', user);
+    // console.log(user)
+    // console.log('token', token);
+        // console.log('user', user);
+        alert('you have got');
         localStorage.setItem('userObject', JSON.stringify(user));
         // ...
         
+        
+        console.log('uid ' , user.uid);
+        console.log('email', user.email);
+        console.log('name', user.displayName);
+
       })
       .catch(function(error) {
         // Handle Errors here.
@@ -50,7 +54,7 @@ function googelSignIn(){
         var credential = error.credential;
         console.log(error.code);
         console.log(error.message);
-        
+        alert('uid not get');
         // ...
         
       })
