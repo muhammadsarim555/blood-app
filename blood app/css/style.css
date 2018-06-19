@@ -274,3 +274,14 @@ margin-right: 10px;
     width: 200px;
 }
 
+#card{
+    background-color: rgba(54, 55, 54, 0.624); 
+    /* color: red; */
+    padding: 10px;
+    text-align: center;
+    /* opacity: .4; */
+     
+}
+#card b{
+    line-height: 100px;
+}
