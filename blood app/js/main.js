@@ -204,19 +204,20 @@ function googelSignIn(){
     // postBottle.innerHTML = null;
     // postBloodGroup.innerHTML = null;
     
-  
+  }
     
       // firebase.database().ref("BloodUsers/").child().on("value").then((postData )=>{
       // var dt = postData.val();
       // console.log(dt.name ,"database");
+  function getUserPost(){
 
-      // firebaseDb.ref("BloodUsers/").once("value", (postData) => {
-      //   let usersList = postData.val()
-      //   console.log(usersList.name, "usersList")
-      //   var currentuser = auth.currentUser.uid;
-      //   console.log(currentuser)
+      firebaseDb.ref("BloodUsers/").once("value", (postData) => {
+        let usersList = postData.val()
+        console.log(usersList.name, "usersList")
+        var currentuser = auth.currentUser.uid;
+        console.log(currentuser , "currentUser");
       
-      // })
+      })
       
       
         // let postDataList = postData.val()

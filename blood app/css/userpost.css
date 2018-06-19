@@ -285,8 +285,12 @@ margin-right: 10px;
     height: 600px;
     border-radius: 20px;
     text-align: center;
-    margin-left: 30px;
-    display: inline-block;
+    float: left;
+    /* margin-left: 30px; */
+    align-content: center;
+    display: inline;
+    /* width: auto;     */
+    
     /* display: inline; */
 }
 /* #targetAll:hover{
@@ -297,6 +301,13 @@ margin-right: 10px;
     background-color: rgb(7, 133, 64);
     width: 100%;
     margin-bottom: 5px; */
+                                            @media(max-width: 1200px){
+                                                #targetAll{
+                                                    font-size: 15px;
+                                                    width: 300px;
+                                                    margin: auto;
+                                                    margin: 0px;
+                                                }
     
     /* line-height: 20px; */
     /* position: absolute; */
@@ -327,11 +338,4 @@ margin-right: 10px;
     margin-bottom: 10px;
 }
 
-@media(max-width: 1200px){
-    #targetAll{
-        font-size: 15px;
-        width: 300px;
-        margin: auto;
-        margin: 0px;
-    }
 }
