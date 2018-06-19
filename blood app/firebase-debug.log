@@ -1,0 +1,19 @@
+[debug] [2018-06-19T15:57:59.874Z] ----------------------------------------------------------------------
+[debug] [2018-06-19T15:57:59.880Z] Command:       E:\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-19T15:57:59.880Z] CLI Version:   3.17.3
+[debug] [2018-06-19T15:57:59.880Z] Platform:      win32
+[debug] [2018-06-19T15:57:59.880Z] Node Version:  v8.9.4
+[debug] [2018-06-19T15:57:59.882Z] Time:          Tue Jun 19 2018 20:57:59 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-19T15:57:59.882Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-19T15:57:59.908Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-19T15:57:59.909Z] > authorizing via signed-in user
+[debug] [2018-06-19T15:57:59.913Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/app-blood  
+  
+ Tue Jun 19 2018 20:57:59 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-19T15:58:01.172Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-19T15:58:01.174Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/app-blood/tokens  
+  
+ Tue Jun 19 2018 20:58:01 GMT+0500 (Pakistan Standard Time)
+[debug] [2018-06-19T15:58:02.148Z] <<< HTTP RESPONSE 200
+[info] 
