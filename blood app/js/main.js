@@ -206,7 +206,7 @@ function googelSignIn(){
     
   
     
-    firebas.database().ref("BloodUsers" + "/").once("value", (postData) => {
+    firebase.database().ref("BloodUsers" + "/").once("value", (postData) => {
       let postDataList = postData.val()
       console.log(postDataList.name, "postDataList")
     //   var currentuser = auth.currentUser.uid;
