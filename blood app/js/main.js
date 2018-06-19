@@ -134,7 +134,7 @@ function googelSignIn(){
           let postErrorBottles = document.getElementById('postErrorBottles');
         let postErrorBloodGroup = document.getElementById('postErrorBloodGroup');
 
-
+        let data = document.getElementById('data');
   
         if(postName.length >= 3 ){
           postErrorName.style.display = 'none'
@@ -206,9 +206,22 @@ function googelSignIn(){
     
   
     
-    var d = firebase.database().ref("BloodUsers" + "/").once("value", (postData) => {
-      // let postDataList = postData.val()
-      console.log(d, "data")
+      // firebase.database().ref("BloodUsers/").child().on("value").then((postData )=>{
+      // var dt = postData.val();
+      // console.log(dt.name ,"database");
+
+      // firebaseDb.ref("BloodUsers/").once("value", (postData) => {
+      //   let usersList = postData.val()
+      //   console.log(usersList.name, "usersList")
+      //   var currentuser = auth.currentUser.uid;
+      //   console.log(currentuser)
+      
+      // })
+      
+      
+        // let postDataList = postData.val()
+      // console.log(d.val(), "data");
+      // data.innerHTML = postData.val();
     //   var currentuser = auth.currentUser.uid;
     //   console.log(currentuser)
       // user = currentuser
@@ -219,8 +232,10 @@ function googelSignIn(){
       //         usersArray.push(usersList[key])
       //     }
 
-
-    })
+    // .catch((er)=>{
+    //   console.log(er.message)
+    // })
+    
 
         }
 

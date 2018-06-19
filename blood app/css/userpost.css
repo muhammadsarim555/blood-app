@@ -326,3 +326,12 @@ margin-right: 10px;
 #bloodgroup{
     margin-bottom: 10px;
 }
+
+@media(max-width: 1200px){
+    #targetAll{
+        font-size: 15px;
+        width: 300px;
+        margin: auto;
+        margin: 0px;
+    }
+}
