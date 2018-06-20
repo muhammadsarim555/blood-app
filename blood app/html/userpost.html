@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,63 +25,65 @@
 
 <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyD_6RfBLw0urzmxDNU4RQobREjatrkROJ4",
-    authDomain: "app-blood.firebaseapp.com",
-    databaseURL: "https://app-blood.firebaseio.com",
-    projectId: "app-blood",
-    storageBucket: "app-blood.appspot.com",
-    messagingSenderId: "171586657340"
-  };
-  firebase.initializeApp(config);
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD_6RfBLw0urzmxDNU4RQobREjatrkROJ4",
+        authDomain: "app-blood.firebaseapp.com",
+        databaseURL: "https://app-blood.firebaseio.com",
+        projectId: "app-blood",
+        storageBucket: "app-blood.appspot.com",
+        messagingSenderId: "171586657340"
+    };
+    firebase.initializeApp(config);
 </script>
 
 <!-- ************************************************************************************************************************************** -->
 
-    
+
 <body onload="getUserPost()">
-    
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
-                <div class="container">
-                    <a class="navbar-brand" href="../index.html"><strong>Blood Donor</strong></a>
-                    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation"> -->
-                        <!-- <span class="navbar-toggler-icon"></span> -->
-                    <!-- </button> -->
-                    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent-7"> -->
-                        <!-- <li class="nav-item active"> -->
-                            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
-                            <!-- </li> -->
-                            <!-- <li class="nav-item"> -->
-                                <!-- <a class="nav-link" href="#">Link</a> -->
-                                <!-- </li> -->
-                                
-                                            <!-- <ul class="navbar-nav mr-auto">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <strong>Blood Donor</strong>
+            </a>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation"> -->
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent-7"> -->
+            <!-- <li class="nav-item active"> -->
+            <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
+            <!-- </li> -->
+            <!-- <li class="nav-item"> -->
+            <!-- <a class="nav-link" href="#">Link</a> -->
+            <!-- </li> -->
+
+            <!-- <ul class="navbar-nav mr-auto">
                                 <a class="nav-link targetProfile" href="#" ><i class="fa fa-user-circle-o" aria-hidden="true"></i>Profile</a>
                             </li>
                         </ul> -->
 
-                        <!--  <form class="form-inline"> -->
-                            <!-- <div class="md-form mt-0">
+            <!--  <form class="form-inline"> -->
+            <!-- <div class="md-form mt-0">
                                 <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                             </div> -->
-                            <!-- </form>  -->
-                        </div>
-                    
-            </nav>
+            <!-- </form>  -->
+        </div>
 
-            <section class="view intro-2 hm-gradient targetImg">
-                    <div class="full-bg-img targetImage">
-                        <div class=" container ">
-                            <div class="d-flex align-items-center content-height">
-                                <div class=" row flex-center pt-5 mt-3">
-                                    <!-- <div class=" text-center text-md-left mb-5"> -->
-                                        <div class="white-text ">
-                                            <div id="target"  id="targetforAllButtons" > 
-                                                <br>
+    </nav>
 
-<!-- Card -->
-<!-- <div id="card">
+    <section class="view intro-2 hm-gradient targetImg">
+        <div class="full-bg-img targetImage">
+            <div class=" container ">
+                <div class="d-flex align-items-center content-height">
+                    <div class=" row flex-center pt-5 mt-3">
+                        <!-- <div class=" text-center text-md-left mb-5"> -->
+                        <div class="white-text ">
+                            <div id="target" id="targetforAllButtons">
+                                <br>
+
+                                <!-- Card -->
+                                <!-- <div id="card">
     <h4>name</h4>
     <br> <br>
     
@@ -88,152 +91,151 @@
         </div>
 
     </div>  -->
-    <center>  
-    <div class="col-md-2 " >
-      
-    <div id="targetAll" >
-    <div class="card wow fadeInRight" data-wow-delay="0.3s">
-        <div class="card-body">
-            <!--Header-->
-            <div class="text-center ">
-                <h3 class="white-text  "> name</h3>
-                <b id="bloodgroup">blood group</b>
-<hr class="hr-light mb-3 mt-4">
-<!-- <br> -->
-                    <h6 class="col-md-10 offset-md-1" >there are many people who need blood so kindly work with us and save their lifes</h6>
-                <!-- <hr class="hr-light"> -->
-                
-            </div>
-            
+                                <center>
+                                    <div class="col-md-2 ">
 
-            <div class="text-center" id="footerCard">
-            
-                <div ><i class="fa fa-phone white-text"></i> 09876654334
-            
-            </div>
-                
-        <!-- <button class="btn btn-outline-white" onclick="post()"> Post</button> -->
+                                        <div id="targetAll">
+                                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                                <div class="card-body">
+                                                    <!--Header-->
+                                                    <div class="text-center ">
+                                                        <h3 class="white-text  "> name</h3>
+                                                        <b id="bloodgroup">blood group</b>
+                                                        <hr class="hr-light mb-3 mt-4">
+                                                        <!-- <br> -->
+                                                        <h6 class="col-md-10 offset-md-1">there are many people who need blood so kindly work with us and save
+                                                            their lifes</h6>
+                                                        <!-- <hr class="hr-light"> -->
 
-
-            </div>
-        </div>
-</div>
-    </div>
-</center>
-<center>  
-    <div class="col-md-2 " >
-      
-    <div id="targetAll" >
-    <div class="card wow fadeInRight" data-wow-delay="0.3s">
-        <div class="card-body">
-            <!--Header-->
-            <div class="text-center ">
-                <h3 class="white-text  "> name</h3>
-                <b id="bloodgroup">blood group</b>
-<hr class="hr-light mb-3 mt-4">
-<!-- <br> -->
-                    <h6 class="col-md-10 offset-md-1" >there are many people who need blood so kindly work with us and save their lifes</h6>
-                <!-- <hr class="hr-light"> -->
-                
-            </div>
-            
-
-            <div class="text-center" id="footerCard">
-            
-                <div ><i class="fa fa-phone white-text"></i> 09876654334
-            
-            </div>
-                
-        <!-- <button class="btn btn-outline-white" onclick="post()"> Post</button> -->
-
-
-            </div>
-        </div>
-</div>
-    </div>
-</center>
-   
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                <div id="targetIconButton"> 
-
-
-
-
-
-
-                                            <a href="../index.html"  class="btn btn-outline-white wow fadeInLeft targetBack text-center btn"    data-wow-delay="0.3s"><i class="fa fa-arrow-circle-o-left  aria-hidden="true" white-text "></i>Back</a>
-                                            <a href="profile.html" class="btn btn-outline-white wow fadeInLeft btn" data-wow-delay="0.3s"><i class="fa fa-user-circle-o" aria-hidden="true"></i></i>Profile</a>
-                                            
-                                    </div>
-                            </div>
                                                     </div>
-        
+
+
+                                                    <div class="text-center" id="footerCard">
+
+                                                        <div>
+                                                            <i class="fa fa-phone white-text"></i> 09876654334
+
+                                                        </div>
+
+                                                        <!-- <button class="btn btn-outline-white" onclick="post()"> Post</button> -->
+
+
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <!--/.Form-->
                                         </div>
-                                    </div>
+                                </center>
+                                <center>
+                                    <div class="col-md-2 ">
+
+                                        <div id="targetAll">
+                                            <div class="card wow fadeInRight" data-wow-delay="0.3s">
+                                                <div class="card-body">
+                                                    <!--Header-->
+                                                    <div class="text-center ">
+                                                        <h3 class="white-text  "> name</h3>
+                                                        <b id="bloodgroup">blood group</b>
+                                                        <hr class="hr-light mb-3 mt-4">
+                                                        <!-- <br> -->
+                                                        <h6 class="col-md-10 offset-md-1">there are many people who need blood so kindly work with us and save
+                                                            their lifes</h6>
+                                                        <!-- <hr class="hr-light"> -->
+
+                                                    </div>
+
+
+                                                    <div class="text-center" id="footerCard">
+
+                                                        <div>
+                                                            <i class="fa fa-phone white-text"></i> 09876654334
+
+                                                        </div>
+
+                                                        <!-- <button class="btn btn-outline-white" onclick="post()"> Post</button> -->
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </center>
+
+
+
+
+
+
+
+                                <b id="userData"></b>
+
+
+
+
+
+                                <div id="targetIconButton">
+                                    <a href="../index.html" class="btn btn-outline-white wow fadeInLeft targetBack text-center btn" data-wow-delay="0.3s">
+                                        <i class="fa fa-arrow-circle-o-left  aria-hidden=" true " white-text "></i>Back</a>
+                                    <a href="profile.html" class="btn btn-outline-white wow fadeInLeft btn" data-wow-delay="0.3s">
+                                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                        </i>Profile</a>
+
                                 </div>
+                                </div>
+                                </div>
+
                             </div>
                         </div>
-                        
-                    </section>
-                    </header>
-                    
-                    <main>
-                            <div class="container">
-                                
-                                <!--Grid row-->
-                                <div class="row py-5">
-                                    
-                                    <!--Grid column-->
-                                    <div class="col-md-12 text-center">
-                                        
-                                        <p>Here, You can Donate your Blood but there are some restriction ,
-                                            
-                                            Firstly Sign Up otherwise you can not post your blood.
-                                            During Post you have to Fill up Foam 
-                                            Thank You
-                                            
-                                            
-                                        </p>
-                                        
-                                    </div>
-                                <!--Grid column-->
-            
-                            </div>
-                            <!--Grid row-->
-            
-                        </div>
-            
-                    </main>
-                    <!--Main Layout-->
-            
+                        <!--/.Form-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <!--Grid row-->
+            <div class="row py-5">
+
+                <!--Grid column-->
+                <div class="col-md-12 text-center">
+
+                    <p>Here, You can Donate your Blood but there are some restriction , Firstly Sign Up otherwise you can not
+                        post your blood. During Post you have to Fill up Foam Thank You
+
+
+                    </p>
+
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+        </div>
+
+    </main>
+    <!--Main Layout-->
 
 
 
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/js/mdb.min.js"></script>
 
-<script src="../js/main.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/js/mdb.min.js"></script>
+
+    <script src="../js/main.js"></script>
 </body>
+
 </html>

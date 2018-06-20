@@ -210,14 +210,21 @@ function googelSignIn(){
       // var dt = postData.val();
       // console.log(dt.name ,"database");
   function getUserPost(){
-
-      firebaseDb.ref("BloodUsers/").once("value", (postData) => {
-        let usersList = postData.val()
-        console.log(usersList.name, "usersList")
+      var userData = document.getElementById('userData');
+      firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
+        // let arr = [];
+        postData.forEach(function (childData){
+        let usersList = childData.val( );
+        console.log(usersList.name,usersList.bottles,usersList.bloodGroup,usersList.number,  "child")
+        // arr.push(usersList);
         var currentuser = auth.currentUser.uid;
         console.log(currentuser , "currentUser");
       
+        userData.innerHTML = usersList.name,usersList.bottles,usersList.bloodGroup,usersList.number;
       })
+    })
+        // return arr;
+      // })
       
       
         // let postDataList = postData.val()
