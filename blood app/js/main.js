@@ -217,7 +217,9 @@ function googelSignIn(){
         var usersList = childData.val( );
         console.log(usersList.name,usersList.bottles,usersList.bloodGroup,usersList.number,  "child")
         // arr.push(usersList);
+        var userName = usersList.name;
         var currentuser = auth.currentUser.uid;
+      
         console.log(currentuser , "currentUser");
       
         userData[0].innerHTML = usersList.name;
@@ -228,41 +230,43 @@ function googelSignIn(){
           
       })
         
-    var center = document.getElementsByTagName('center');
-    center.innerHTML = `<div class="col-md-2 ">
+    var center = document.getElementById('center');
+    // var targetAll = document.createElement('div');
+    // targetAll.setAttribute('id' , 'targetAll');
+    // var cardDiv = document.createElement('div');
+    // var h4 = document.createElement('h4');
+    // h4.setAttribute('id', 'top');
+    // var h4Node = document.createTextNode(usersList.name)
+    // cardDiv.s1etAttribute('class', 'card text-center');
+    // center.appendChild(targetAll);
+    // targetAll.appendChild(cardDiv);
+    // cardDiv.appendChild(h4);
 
-    <div id="targetAll">
-        <div class="card wow fadeInRight" data-wow-delay="0.3s">
-            <div class="card-body">
-                <!--Header-->
-                <div class="text-center ">
-                    <h3 class="white-text  ">name </h3>
-                    <b id="bloodgroup">blood group</b>
-                    <hr class="hr-light mb-3 mt-4">
-                    <!-- <br> -->
-                    <h6 class="col-md-10 offset-md-1">there are many people who need blood so kindly work with us and save
-                        their lifes</h6>
-                    <!-- <hr class="hr-light"> -->
+      center.innerHTML = `     <div id="targetAll">
+      <div class="card text-center">
 
-                </div>
-
-
-                <div class="text-center" id="footerCard">
-
-                    <div>
-                        <i class="fa fa-phone white-text"></i> 09876654334
-
-                    </div>
-
-                    <!-- <button class="btn btn-outline-white" onclick="post()"> Post</button> -->
+          <h4 id="top">  
+          </h4>
+          <h6>blood group</h6>
+          <hr class="hr-light mb-3 mt-4">
 
 
-                </div>
-            </div>
-        </div>
-    </div>`
+          <div class="card-body">
 
+              <h4 class="card-title">
+                  <a>title</a>
+              </h4>
+              <p class="card-text white-text">there are many people who need blood so kindly work with us and save their
+                  lifes.</p>
+              <br>
+              <div id="footerCard">
+                  <i class="fa fa-phone white-text"></i> 09876654334
 
+              </div>
+
+          </div>
+      </div>
+  </div>`
 
 
 
