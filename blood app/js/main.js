@@ -210,19 +210,73 @@ function googelSignIn(){
       // var dt = postData.val();
       // console.log(dt.name ,"database");
   function getUserPost(){
-      var userData = document.getElementById('userData');
+      var userData = document.getElementsByClassName('userData');
       firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
         // let arr = [];
         postData.forEach(function (childData){
-        let usersList = childData.val( );
+        var usersList = childData.val( );
         console.log(usersList.name,usersList.bottles,usersList.bloodGroup,usersList.number,  "child")
         // arr.push(usersList);
         var currentuser = auth.currentUser.uid;
         console.log(currentuser , "currentUser");
       
-        userData.innerHTML = usersList.name,usersList.bottles,usersList.bloodGroup,usersList.number;
+        userData[0].innerHTML = usersList.name;
+        userData[1].innerHTML = usersList.bottles;
+        userData[2].innerHTML = usersList.bloodGroup;
+        userData[3].innerHTML = usersList.number;
+        // ,usersList.bloodGroup,usersList.;
+          
       })
-    })
+        
+    // var center = document.getElementsByTagName('center');
+    // center.innerHTML = `<div class="col-md-2 ">
+
+    // <div id="targetAll">
+    //     <div class="card wow fadeInRight" data-wow-delay="0.3s">
+    //         <div class="card-body">
+    //             <!--Header-->
+    //             <div class="text-center ">
+    //                 <h3 class="white-text  "> name</h3>
+    //                 <b id="bloodgroup">blood group</b>
+    //                 <hr class="hr-light mb-3 mt-4">
+    //                 <!-- <br> -->
+    //                 <h6 class="col-md-10 offset-md-1">there are many people who need blood so kindly work with us and save
+    //                     their lifes</h6>
+    //                 <!-- <hr class="hr-light"> -->
+
+    //             </div>
+
+
+    //             <div class="text-center" id="footerCard">
+
+    //                 <div>
+    //                     <i class="fa fa-phone white-text"></i> 09876654334
+
+    //                 </div>
+
+    //                 <!-- <button class="btn btn-outline-white" onclick="post()"> Post</button> -->
+
+
+    //             </div>
+    //         </div>
+    //     </div>
+    // </div>`
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
+
+
         // return arr;
       // })
       
