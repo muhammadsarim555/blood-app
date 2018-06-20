@@ -243,8 +243,8 @@ function getUserPost() {
       // center.appendChild(targetAll);
       // targetAll.appendChild(cardDiv);
       // cardDiv.appendChild(h4);userName
-
-      for(var i = 0; i<usersList.length; i++){
+      
+      // for(var i = 0; i<usersList.length; i++){
       center.innerHTML = `     <div id="targetAll">
     <div class="card text-center">
     
@@ -270,7 +270,7 @@ function getUserPost() {
           </div>
           </div>
   </div>`
-      }
+      // }
       // ********************************************************************
       // card variables
 
