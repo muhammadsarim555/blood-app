@@ -212,14 +212,14 @@ function post() {
 function getUserPost() {
   // var userData = document.getElementsByClassName('userData');
   firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
-    let arr = [];
+    // let arr = [];
     postData.forEach(function (childData) {
       var usersList = childData.val();
       // var keys = Object.keys(usersList);
       // console.log('keys', keys);
       console.log(currentuser, "currentUser");
       console.log(usersList.name, usersList.bottles, usersList.bloodGroup, usersList.number, "child")
-      arr.push(usersList.uid);
+      // arr.push(usersList.uid);
       console.log(arr, "array");
       // for (let i = 0; i < arr.length; i++) {
         // var currentObj = postObject[keys[i]];
@@ -233,23 +233,23 @@ function getUserPost() {
       
         
     })
-      function c (){
+      // function c (){
 
-      var center = document.getElementById('center');
-      // center.addEventListener('click' , function(){
+      var div = document.getElementById('div'); ; 
+      center.addEventListener('click' , function(){
 
-      // var targetAll = document.createElement('div');
-      // targetAll.setAttribute('id' , 'targetAll');
-      // var cardDiv = document.createElement('div');
-      // var h4 = document.createElement('h4');
-      // h4.setAttribute('id', 'top');
-      // var h4Node = document.createTextNode(usersList.name)
-      // cardDiv.s1etAttribute('class', 'card text-center');
-      // center.appendChild(targetAll);
-      // targetAll.appendChild(cardDiv);
-      // cardDiv.appendChild(h4);userName
+      var targetAll = document.createElement('div');
+      targetAll.setAttribute('id' , 'targetAll');
+      var cardDiv = document.createElement('div');
+      var h4 = document.createElement('h4');
+      h4.setAttribute('id', 'top');
+      var h4Node = document.createTextNode(usersList.name)
+      cardDiv.s1etAttribute('class', 'card text-center');
+      center.appendChild(targetAll);
+      targetAll.appendChild(cardDiv);
+      cardDiv.appendChild(h4);userName
       
-      // for(var i = 0; i<usersList.length; i++){
+      for(var i = 0; i<usersList.length; i++){
         
       center.innerHTML = `     <div id="targetAll">
     <div class="card text-center">
@@ -285,7 +285,7 @@ function getUserPost() {
       var bloodgroup = document.getElementById('bloodgroup').innerHTML = userBloodGroup;
 
   
-}
+
 }
 
   // return arr;
