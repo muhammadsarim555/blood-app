@@ -212,28 +212,31 @@ function post() {
 function getUserPost() {
   // var userData = document.getElementsByClassName('userData');
   firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
-    // let arr = [];
+    let arr = [];
     postData.forEach(function (childData) {
       var usersList = childData.val();
+      // var keys = Object.keys(usersList);
+      // console.log('keys', keys);
+      console.log(currentuser, "currentUser");
       console.log(usersList.name, usersList.bottles, usersList.bloodGroup, usersList.number, "child")
-      // arr.push(usersList);
+      arr.push(usersList.uid);
+      console.log(arr, "array");
+      // for (let i = 0; i < arr.length; i++) {
+        // var currentObj = postObject[keys[i]];
+      })
+        
       var userName = usersList.name;
       var userBottles = usersList.bottles;
       var userBloodGroup = usersList.bloodGroup;
       var userNumber = usersList.number
       var currentuser = auth.currentUser.uid;
-
-      console.log(currentuser, "currentUser");
-
-      // userData[0].innerHTML = usersList.name;
-      // userData[1].innerHTML = usersList.bottles;
-      // userData[2].innerHTML = usersList.bloodGroup;
-      // userData[3].innerHTML = usersList.number;
-      // ,usersList.bloodGroup,usersList.;
-
+      
+        
+    })
+      function c (){
 
       var center = document.getElementById('center');
-      center.addEventListener('click' , function(){
+      // center.addEventListener('click' , function(){
 
       // var targetAll = document.createElement('div');
       // targetAll.setAttribute('id' , 'targetAll');
@@ -247,6 +250,7 @@ function getUserPost() {
       // cardDiv.appendChild(h4);userName
       
       // for(var i = 0; i<usersList.length; i++){
+        
       center.innerHTML = `     <div id="targetAll">
     <div class="card text-center">
     
@@ -280,18 +284,9 @@ function getUserPost() {
       var number = document.getElementById('number').innerHTML = userNumber;
       var bloodgroup = document.getElementById('bloodgroup').innerHTML = userBloodGroup;
 
-    })
-
-
-    })
-
-
-
-
-
-
-  })
-
+  
+}
+}
 
   // return arr;
   // })
@@ -315,7 +310,7 @@ function getUserPost() {
   // })
 
 
-}
+
 
 
 
