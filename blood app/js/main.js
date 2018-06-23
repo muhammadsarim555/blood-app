@@ -233,6 +233,8 @@ function getUserPost() {
 
 
       var center = document.getElementById('center');
+      center.addEventListener('click' , function(){
+
       // var targetAll = document.createElement('div');
       // targetAll.setAttribute('id' , 'targetAll');
       // var cardDiv = document.createElement('div');
@@ -278,6 +280,7 @@ function getUserPost() {
       var number = document.getElementById('number').innerHTML = userNumber;
       var bloodgroup = document.getElementById('bloodgroup').innerHTML = userBloodGroup;
 
+    })
 
 
     })
