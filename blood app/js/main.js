@@ -220,10 +220,9 @@ function getUserPost() {
       console.log(currentuser, "currentUser");
       console.log(usersList.name, usersList.bottles, usersList.bloodGroup, usersList.number, "child")
       // arr.push(usersList.uid);
-      console.log(arr, "array");
+      // console.log(arr, "array");
       // for (let i = 0; i < arr.length; i++) {
         // var currentObj = postObject[keys[i]];
-      })
         
       var userName = usersList.name;
       var userBottles = usersList.bottles;
@@ -232,66 +231,78 @@ function getUserPost() {
       var currentuser = auth.currentUser.uid;
       
         
-    })
       // function c (){
-
-      var div = document.getElementById('div'); ; 
-      center.addEventListener('click' , function(){
-
+        
+        var div = document.getElementById('div');
+        // div.addEventListener('load' , function(){
+      
       var targetAll = document.createElement('div');
       targetAll.setAttribute('id' , 'targetAll');
+      div.appendChild(targetAll);
       var cardDiv = document.createElement('div');
+      cardDiv.setAttribute('class' , 'card-text-center')
+      targetAll.appendChild(cardDiv);
+      
       var h4 = document.createElement('h4');
       h4.setAttribute('id', 'top');
       var h4Node = document.createTextNode(usersList.name)
-      cardDiv.s1etAttribute('class', 'card text-center');
-      center.appendChild(targetAll);
-      targetAll.appendChild(cardDiv);
-      cardDiv.appendChild(h4);userName
+      h4.appendChild(h4Node);
+      cardDiv.appendChild(h4);
       
-      for(var i = 0; i<usersList.length; i++){
+      
+      
+      
+      
+      // cardDiv.setAttribute('class', 'card text-center');
+      // center.appendChild(targetAll);
+      // targetAll.appendChild(cardDiv);
+      // cardDiv.appendChild(h4);userName
+      // })
+      // for(var i = 0; i<usersList.length; i++){
         
-      center.innerHTML = `     <div id="targetAll">
-    <div class="card text-center">
-    
-    <h4 id="top">  
-    </h4>
-    <h6 id="bloodgroup"></h6>
-          <hr class="hr-light mb-3 mt-4">
+        //     div.innerHTML = `     <div id="targetAll">
+        //   <div class="card text-center">
+        
+        //   <h4 id="top">  
+        //   </h4>
+        //   <h6 id="bloodgroup"></h6>
+        //         <hr class="hr-light mb-3 mt-4">
           
           
-          <div class="card-body">
-
-          <h4 class="card-title"> 
-                  <a>title</a>
-                  </h4>
-                  <p class="card-text white-text">there are many people who need blood so kindly work with us and save their
-                  lifes.</p>
-                  <br>
-              <div id="footerCard">
-               <b id="number"><i class="fa fa-phone white-text">  09876654334</i></b>
-              
-              </div>
-              
-          </div>
-          </div>
-  </div>`
-      // }
-      // ********************************************************************
-      // card variables
-
-      var top = document.getElementById('top').innerHTML = userName;
-      var number = document.getElementById('number').innerHTML = userNumber;
-      var bloodgroup = document.getElementById('bloodgroup').innerHTML = userBloodGroup;
-
+        //         <div class="card-body">
+        
+  //         <h4 class="card-title"> 
+  //                 <a>title</a>
+  //                 </h4>
+  //                 <p class="card-text white-text">there are many people who need blood so kindly work with us and save their
+  //                 lifes.</p>
+  //                 <br>
+  //             <div id="footerCard">
+  //              <b id="number"><i class="fa fa-phone white-text">  09876654334</i></b>
   
-
-}
-
-  // return arr;
-  // })
-
-
+  //             </div>
+              
+  //         </div>
+  //         </div>
+  // </div>`
+  // }
+  // ********************************************************************
+  // card variables
+  
+  // var top = document.getElementById('top').innerHTML = userName;
+  // var number = document.getElementById('number').innerHTML = userNumber;
+      // var bloodgroup = document.getElementById('bloodgroup').innerHTML = userBloodGroup;
+      
+      
+    })
+      
+    })
+    }
+    
+    // return arr;
+    // })
+    
+    
   // let postDataList = postData.val()
   // console.log(d.val(), "data");
   // data.innerHTML = postData.val();
