@@ -340,3 +340,22 @@ margin-right: 10px;
 }
 
 }
+
+adCard {
+    border: transparent !important;
+    background-color: transparent !important;
+    width: 280px;
+    height: 420px;
+    display: inline-block;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid lightgray;
+    box-shadow: 0px 4px 8px lightgrey;
+    margin: 12px;
+}
+.adCard-container {
+    width: 100%;
+    height: auto;
+    /* margin: 1% auto; */
+    text-align: center;
+}

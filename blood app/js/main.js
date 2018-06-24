@@ -210,9 +210,9 @@ function post() {
 // var dt = postData.val();
 // console.log(dt.name ,"database");
 function getUserPost() {
-  // var userData = document.getElementsByClassName('userData');
-  firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
-    // let arr = [];
+// var userData = document.getElementsByClassName('userData');
+firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
+  // let arr = [];
     postData.forEach(function (childData) {
       var usersList = childData.val();
       // var keys = Object.keys(usersList);
@@ -236,68 +236,69 @@ function getUserPost() {
         var div = document.getElementById('div');
         // div.addEventListener('load' , function(){
       
-      var targetAll = document.createElement('div');
-      targetAll.setAttribute('id' , 'targetAll');
-      div.appendChild(targetAll);
+      var adCard = document.createElement('div');
+      adCard.setAttribute('class' , 'adCard');
+      div.appendChild(adCard);
+      // end
       var cardDiv = document.createElement('div');
       cardDiv.setAttribute('class' , 'card-text-center')
-      targetAll.appendChild(cardDiv);
+      adCard.appendChild(cardDiv);
       
       var h4 = document.createElement('h4');
       h4.setAttribute('id', 'top');
       var h4Node = document.createTextNode(usersList.name)
       h4.appendChild(h4Node);
       cardDiv.appendChild(h4);
+      // end
+
+      var cH6 = document.createElement('h6');
+      cardDiv.appendChild(cH6);
+      cH6.setAttribute('id', 'bloodgroup');
+     var  cH6Node = document.createTextNode(usersList.bloodGroup); 
+     cH6.appendChild(cH6Node);
+      // end
+ var cHr = document.createElement('hr');
+     cardDiv.appendChild(cHr)
+     cHr.setAttribute('class' , 'hr-light mb-3 mt-4');
+      
+     var divCardBody = document.createElement('div');
+     cardDiv.appendChild(divCardBody);
+     divCardBody.setAttribute('class' , 'adCard-container');
+    var bodyP = document.createElement('p');
+    divCardBody.appendChild(bodyP);
+    var bodyPNode = document.createTextNode(usersList.bottles);
+    bodyP.appendChild(bodyPNode);
+    // end
+
+    var p = document.createElement('p');
+    divCardBody.appendChild(p);
+    var pNode = document.createTextNode(usersList.number);
+    p.appendChild(pNode)
+    // bodyH4.setAttribute('class' , 'card-title');
+    // var bodyA = document.createElement('a');
+    // bodyH4.appendChild(bodyA);
+
       
       
-      
-      
-      
-      // cardDiv.setAttribute('class', 'card text-center');
-      // center.appendChild(targetAll);
-      // targetAll.appendChild(cardDiv);
-      // cardDiv.appendChild(h4);userName
-      // })
-      // for(var i = 0; i<usersList.length; i++){
-        
-        //     div.innerHTML = `     <div id="targetAll">
-        //   <div class="card text-center">
-        
-        //   <h4 id="top">  
-        //   </h4>
-        //   <h6 id="bloodgroup"></h6>
-        //         <hr class="hr-light mb-3 mt-4">
-          
-          
-        //         <div class="card-body">
-        
-  //         <h4 class="card-title"> 
-  //                 <a>title</a>
-  //                 </h4>
-  //                 <p class="card-text white-text">there are many people who need blood so kindly work with us and save their
-  //                 lifes.</p>
-  //                 <br>
-  //             <div id="footerCard">
-  //              <b id="number"><i class="fa fa-phone white-text">  09876654334</i></b>
-  
-  //             </div>
-              
-  //         </div>
-  //         </div>
-  // </div>`
-  // }
-  // ********************************************************************
-  // card variables
-  
-  // var top = document.getElementById('top').innerHTML = userName;
-  // var number = document.getElementById('number').innerHTML = userNumber;
-      // var bloodgroup = document.getElementById('bloodgroup').innerHTML = userBloodGroup;
-      
+  //   <div class="adCard">
+  //   <div class="img">
+  //     <img src="images/juicer.jpg" alt="" class="" id="img">
+  //   </div>
+  //   <div class="text">
+  //     <p>Juicier
+  //     </p>
+  //     <p>Price: 2499.00 PKR</p>
+
+  //     <p>Ad Posted By: Masood Alam</p>
+  //     <p>City: Karachi</p>
+  //     <p>Email: masood.alam.987@gmail.com</p>
+  //     <p>Contact: +923472503500</p>
+  //   </div>
+  // </div>
       
     })
-      
     })
-    }
+  }
     
     // return arr;
     // })
