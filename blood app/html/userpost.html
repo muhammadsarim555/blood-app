@@ -23,19 +23,6 @@
 
 <!-- ************************************************************************************************************************************** -->
 
-<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
-<script>
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyD_6RfBLw0urzmxDNU4RQobREjatrkROJ4",
-        authDomain: "app-blood.firebaseapp.com",
-        databaseURL: "https://app-blood.firebaseio.com",
-        projectId: "app-blood",
-        storageBucket: "app-blood.appspot.com",
-        messagingSenderId: "171586657340"
-    };
-    firebase.initializeApp(config);
-</script>
 
 <!-- ************************************************************************************************************************************** -->
 
@@ -109,7 +96,10 @@
                                 <b class="userData"></b>
 
 
+                                <div id="addpostdata">
 
+                                </div>
+                            
 
 
                                 <div id="targetIconButton">
@@ -135,35 +125,23 @@
     </section>
     </header>
 
-    <main>
-        <div class="container">
+   
 
-            <!--Grid row-->
-            <div class="row py-5">
-
-                <!--Grid column-->
-                <div class="col-md-12 text-center">
-
-                    <p>Here, You can Donate your Blood but there are some restriction , Firstly Sign Up otherwise you can not
-                        post your blood. During Post you have to Fill up Foam Thank You
-
-
-                    </p>
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
-        </div>
-
-    </main>
-    <!--Main Layout-->
-
-
-
-
+</body>
+    
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyD_6RfBLw0urzmxDNU4RQobREjatrkROJ4",
+        authDomain: "app-blood.firebaseapp.com",
+        databaseURL: "https://app-blood.firebaseio.com",
+        projectId: "app-blood",
+        storageBucket: "app-blood.appspot.com",
+        messagingSenderId: "171586657340"
+    };
+    firebase.initializeApp(config);
+</script>
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -176,6 +154,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.3/js/mdb.min.js"></script>
 
     <script src="../js/main.js"></script>
-</body>
 
 </html>

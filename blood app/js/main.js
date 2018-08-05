@@ -199,7 +199,7 @@ function post() {
   // console.log('uid', uid);
   // reset();
   // location = "userpost.html"
-  // postName.innerText = " ";
+  // postName.value = " ";
   // postNumber.innerHTML = null;
   // postBottle.innerHTML = null;
   // postBloodGroup.innerHTML = null;
@@ -211,117 +211,54 @@ function post() {
 // console.log(dt.name ,"database");
 function getUserPost() {
 // var userData = document.getElementsByClassName('userData');
-firebaseDb.ref("BloodUsers/" + "/").once("value", (postData) => {
-  // let arr = [];
-    postData.forEach(function (childData) {
-      var usersList = childData.val();
-      // var keys = Object.keys(usersList);
-      // console.log('keys', keys);
-      console.log(currentuser, "currentUser");
-      console.log(usersList.name, usersList.bottles, usersList.bloodGroup, usersList.number, "child")
-      // arr.push(usersList.uid);
-      // console.log(arr, "array");
-      // for (let i = 0; i < arr.length; i++) {
-        // var currentObj = postObject[keys[i]];
-        
-      var userName = usersList.name;
-      var userBottles = usersList.bottles;
-      var userBloodGroup = usersList.bloodGroup;
-      var userNumber = usersList.number
-      var currentuser = auth.currentUser.uid;
-      
-        
-      // function c (){
-        
-        var div = document.getElementById('div');
-        // div.addEventListener('load' , function(){
-      
-      var adCard = document.createElement('div');
-      adCard.setAttribute('class' , 'adCard');
-      div.appendChild(adCard);
-      // end
-      var cardDiv = document.createElement('div');
-      cardDiv.setAttribute('class' , 'card-text-center')
-      adCard.appendChild(cardDiv);
-      
-      var h4 = document.createElement('h4');
-      h4.setAttribute('id', 'top');
-      var h4Node = document.createTextNode(usersList.name)
-      h4.appendChild(h4Node);
-      cardDiv.appendChild(h4);
-      // end
-
-      var cH6 = document.createElement('h6');
-      cardDiv.appendChild(cH6);
-      cH6.setAttribute('id', 'bloodgroup');
-     var  cH6Node = document.createTextNode(usersList.bloodGroup); 
-     cH6.appendChild(cH6Node);
-      // end
- var cHr = document.createElement('hr');
-     cardDiv.appendChild(cHr)
-     cHr.setAttribute('class' , 'hr-light mb-3 mt-4');
-      
-     var divCardBody = document.createElement('div');
-     cardDiv.appendChild(divCardBody);
-     divCardBody.setAttribute('class' , 'adCard-container');
-    var bodyP = document.createElement('p');
-    divCardBody.appendChild(bodyP);
-    var bodyPNode = document.createTextNode(usersList.bottles);
-    bodyP.appendChild(bodyPNode);
-    // end
-
-    var p = document.createElement('p');
-    divCardBody.appendChild(p);
-    var pNode = document.createTextNode(usersList.number);
-    p.appendChild(pNode)
-    // bodyH4.setAttribute('class' , 'card-title');
-    // var bodyA = document.createElement('a');
-    // bodyH4.appendChild(bodyA);
-
-      
-      
-  //   <div class="adCard">
-  //   <div class="img">
-  //     <img src="images/juicer.jpg" alt="" class="" id="img">
-  //   </div>
-  //   <div class="text">
-  //     <p>Juicier
-  //     </p>
-  //     <p>Price: 2499.00 PKR</p>
-
-  //     <p>Ad Posted By: Masood Alam</p>
-  //     <p>City: Karachi</p>
-  //     <p>Email: masood.alam.987@gmail.com</p>
-  //     <p>Contact: +923472503500</p>
-  //   </div>
-  // </div>
-      
-    })
-    })
+firebaseDb.ref("BloodUsers/" ).once("value", (postData) => {
+  let arr = [];
+  let data = postData.val()
+  // console.log(data);
+ 
+  for(let key in data ){
+    // console.log(
+      arr.push(data[key]);
   }
+  
+  let addpostdata = document.getElementById('addpostdata');
+  console.log(arr);
+  arr.map((v,i)=>{
+    var addpost = document.createElement("div");
+    addpost.setAttribute("id", "addpost");
+    var footer = document.createElement('div');
+    footer.setAttribute("class", "cardfooter");
+    var h4name = document.createElement('h5');
+    var h4namenode = document.createTextNode(v.name);
+    h4name.className = "name";
+    h4name.appendChild(h4namenode);
+    footer.appendChild(h4name);
+    var h6 = document.createElement('h6');
+    // var h6node = document.createTextNode(d.Price);
+    h6.innerHTML = "Bottles: " + v.bottles;
+    //   h6.appendChild(h6node);
+    footer.appendChild(h6);
+    var model = document.createElement('h6');
+    model.className = "category";
+    model.innerHTML = "Group: " + v.bloodGroup;
+    // var modelnode = document.createTextNode(d.Model);
+    // model.appendChild(modelnode);
+    footer.appendChild(model);
+    var category = document.createElement('h6');
+    category.className = "category";
+    category.innerHTML = "Number: " + v.number;
+    // var categorynode = document.createTextNode(d.Category);
+    // category.appendChild(categorynode);
+    footer.appendChild(category);
     
-    // return arr;
-    // })
-    
-    
-  // let postDataList = postData.val()
-  // console.log(d.val(), "data");
-  // data.innerHTML = postData.val();
-  //   var currentuser = auth.currentUser.uid;
-  //   console.log(currentuser)
-  // user = currentuser
-  // for (var key in usersList) {
-  //     // console.log(usersList[key])
-  //     if (currentuser !== key) {
-  //         usersList[key].uid = key
-  //         usersArray.push(usersList[key])
-  //     }
+    var hr = document.createElement('hr');
+    footer.appendChild(hr);
+        addpost.appendChild(footer);
+        addpostdata.appendChild(addpost);
+  }  )
+})
 
-  // .catch((er)=>{
-  //   console.log(er.message)
-  // })
-
-
+}
 
 
 
